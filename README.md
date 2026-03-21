@@ -1,6 +1,6 @@
-# dbskill
+# dbskill for OpenAI Codex CLI (in MacOS Terminal app)
 
-dontbesilent 商业诊断工具箱。从 12,307 条推文中提炼方法论，做成 Claude Code skill。
+dontbesilent 商业诊断工具箱。从 12,307 条推文中提炼方法论，做成 Codex skills。
 
 **所有内容开放，可以整套装，也可以只拿一部分。知识包、原子库、单个公理，都能单独用。**
 
