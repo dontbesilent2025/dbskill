@@ -43,19 +43,139 @@ Skill 之间会自动推荐下一步。比如 diagnosis 发现心理问题信号
 
 ---
 
-## 安装
+## 安装 for Codex CLI (in Terminal app)
+
+
+
+这是一个用于 **OpenAI Codex CLI** 的技能包安装仓库说明。
+
+本仓库的作用，是将这里提供的 skills 安装到你本机的 Codex skills 目录中，使它们能够在 Codex 中被识别和调用。
+
+本说明面向 **macOS 用户**，默认使用 **Terminal.app** 进行安装。
+
+
+### 第 1 步：检查 `~/.agents/skills` 文件夹是否已经存在
+
+在 Terminal 中运行：
 
 ```bash
-npx skills add dontbesilent2025/dbskill
+ls -ld ~/.agents/skills
 ```
 
-或手动：
+如果该文件夹已经存在，那么你**不需要重复创建**。
+
+如果系统提示这个目录不存在，那么请继续执行下面这一步来创建它。
+
+---
+
+### 第 2 步：如果目录不存在，则创建 `~/.agents/skills`
+
 
 ```bash
-git clone https://github.com/dontbesilent2025/dbskill.git /tmp/dbskill && cp -r /tmp/dbskill/skills/dbs* ~/.claude/skills/ && rm -rf /tmp/dbskill
+mkdir -p ~/.agents/skills
 ```
 
-安装后在 Claude Code 中输入 `/dbs` 即可。
+
+### 第 3 步：把本仓库克隆到 `/tmp`
+
+运行：
+
+```bash
+git clone https://github.com/eawlot3000/dbskill.git /tmp/dbskill
+```
+
+说明：
+
+* 这里把仓库临时克隆到 `/tmp/dbskill`
+* `/tmp` 是一个临时目录，适合用于这种中转安装方式
+* 这样不会把仓库直接下载到你当前正在工作的目录里
+
+---
+
+### 第 4 步：把仓库中的 skills 复制到 Codex 的 skills 目录
+
+运行：
+
+```bash
+cp -R /tmp/dbskill/skills/* ~/.agents/skills/
+```
+
+说明：
+
+* `cp` 表示复制
+* `-R` 表示递归复制整个目录内容
+* 这条命令会把 `/tmp/dbskill/skills/` 下面的所有 skill 文件夹复制到 `~/.agents/skills/` 中
+
+---
+
+### 第 5 步：可选，删除临时克隆目录
+
+运行：
+
+```bash
+rm -rf /tmp/dbskill
+```
+
+说明：
+
+* 这一步不是必须的
+* 它只是删除刚才临时克隆到 `/tmp` 的仓库副本
+* 不会影响已经复制到 `~/.agents/skills/` 里的内容
+
+---
+
+## 一键安装命令
+
+如果你不想一步一步执行，也可以直接运行下面这一整组命令：
+
+```bash
+mkdir -p ~/.agents/skills
+git clone https://github.com/eawlot3000/dbskill.git /tmp/dbskill
+cp -R /tmp/dbskill/skills/* ~/.agents/skills/
+rm -rf /tmp/dbskill
+```
+
+---
+
+## 如何验证是否安装成功
+
+安装完成后，可以先启动 Codex：
+
+```bash
+codex
+```
+
+进入 Codex 之后，你可以尝试查看 skills 是否已经被识别。
+
+有些 Codex 环境支持输入：
+
+```text
+/skills
+```
+
+来查看当前可用技能。
+
+你也可以尝试直接调用某个 skill，例如：
+
+```text
+$dbs
+```
+
+如果你的 Codex 环境支持显式调用 skills，那么它应该可以识别已经安装好的技能。
+
+---
+
+## 卸载方法
+
+如果你之后不想继续使用这些 skills，可以手动进入下面的目录：
+
+
+```bash
+open ~/.agents/skills
+```
+
+然后删除对应的 skill 文件夹即可。
+
 
 ---
 
