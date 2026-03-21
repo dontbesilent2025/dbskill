@@ -1,4 +1,4 @@
-# dbskill for OpenAI Codex CLI (in MacOS Terminal app) [English Version](README_EN.md)
+# dbskill for OpenAI Codex CLI (in MacOS Terminal app) [➡English Version](README_EN.md)
 
 dontbesilent 商业诊断工具箱。从 12,307 条推文中提炼方法论，做成 Codex skills。
 
