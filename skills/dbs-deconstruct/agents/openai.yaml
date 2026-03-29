@@ -1,0 +1,7 @@
+interface:
+  display_name: "DBS Deconstruct"
+  short_description: "Break vague business terms into precise meaning"
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+  brand_color: "#465785"
+  default_prompt: "Use $dbs-deconstruct to strip this business term down to precise meanings and plain language."

@@ -1,0 +1,10 @@
+interface:
+  display_name: "DBS Router"
+  short_description: "Route vague business asks to the right DBS workflow"
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+  brand_color: "#912121"
+  default_prompt: "Use $dbs to route this vague business request to the right dontbesilent skill and ask the first diagnostic question."
+
+policy:
+  allow_implicit_invocation: false

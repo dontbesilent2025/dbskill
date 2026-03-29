@@ -1,0 +1,7 @@
+interface:
+  display_name: "DBS Content"
+  short_description: "Diagnose how a topic or draft should improve"
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+  brand_color: "#0F8B8D"
+  default_prompt: "Use $dbs-content to diagnose how this topic or draft should become a stronger piece of content."
