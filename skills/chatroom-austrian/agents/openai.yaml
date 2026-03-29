@@ -1,0 +1,7 @@
+interface:
+  display_name: "DBS Austrian Chat"
+  short_description: "Debate a topic through Hayek, Mises, and Codex"
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+  brand_color: "#1F6B57"
+  default_prompt: "Use $chatroom-austrian to debate this question through Hayek, Mises, and a Codex verdict."

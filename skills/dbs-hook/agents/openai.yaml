@@ -1,0 +1,7 @@
+interface:
+  display_name: "DBS Hook"
+  short_description: "Diagnose weak openings and generate sharper hooks"
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+  brand_color: "#D35B1F"
+  default_prompt: "Use $dbs-hook to diagnose this short-video opening and generate sharper hook options."

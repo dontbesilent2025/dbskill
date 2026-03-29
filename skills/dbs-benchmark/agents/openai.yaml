@@ -1,0 +1,7 @@
+interface:
+  display_name: "DBS Benchmark"
+  short_description: "Find a benchmark worth copying without self-noise"
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+  brand_color: "#C07A18"
+  default_prompt: "Use $dbs-benchmark to find a benchmark worth copying and cut away my personal excuses."

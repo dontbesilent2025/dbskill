@@ -1,0 +1,7 @@
+interface:
+  display_name: "DBS Diagnosis"
+  short_description: "Test whether a business problem is real or misframed"
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+  brand_color: "#A12D4A"
+  default_prompt: "Use $dbs-diagnosis to decide whether this is a real business problem, a false problem, or a psychology problem in disguise."

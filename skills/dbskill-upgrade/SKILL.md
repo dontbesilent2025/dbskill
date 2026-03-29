@@ -1,132 +1,128 @@
 ---
 name: dbskill-upgrade
-description: 升级 dbskill 到最新版本
-trigger: /dbskill-upgrade、/升级dbskill、「升级 dbskill」
+description: |
+  升级 dontbesilent dbskill 到最新版本并汇总变化。用于用户明确要求检查、比较、更新、重装或修复 dbskill 时，尤其适用于 Codex + Windows + PowerShell 环境，以及技能安装在 `.agents/skills`、`$CODEX_HOME/skills` 或 `~/.codex/skills` 的情况。
 ---
 
 # dbskill-upgrade
 
-升级 dbskill 到最新版本，显示更新内容。
+在 Codex 环境中安全升级 dbskill，并显示更新内容。
 
-## 使用场景
+## 适配范围
 
-- 用户主动调用 `/dbskill-upgrade` 升级
-- 显示版本变化和更新内容
+- 优先支持 Windows + PowerShell
+- 支持 `%USERPROFILE%\\.agents\\skills`
+- 支持 `$CODEX_HOME/skills`
+- 支持 `%USERPROFILE%\\.codex\\skills`
+- 不假设存在 `~/.claude/skills`
+- 不假设本地一定有 `VERSION` 或 `README.md`
+
+## 官方目录清单
+
+只把以下目录视为官方 dbskill：
+
+- `chatroom-austrian`
+- `dbs`
+- `dbs-action`
+- `dbs-benchmark`
+- `dbs-content`
+- `dbs-deconstruct`
+- `dbs-diagnosis`
+- `dbs-hook`
+- `dbskill-upgrade`
+
+不要覆盖 `find-skills` 或任何其他无关 skill，除非用户明确要求。
 
 ## 升级流程
 
-### Step 1: 检测安装位置
+### Step 1：定位当前安装目录
 
-```bash
-if [ -d "$HOME/.claude/skills/dbs" ]; then
-  INSTALL_DIR="$HOME/.claude/skills"
-  echo "Install location: $INSTALL_DIR"
-else
-  echo "ERROR: dbskill not found in ~/.claude/skills/"
-  exit 1
-fi
+按下面顺序找安装目录：
+
+1. 当前 `dbskill-upgrade` 所在父目录是否同时包含 `dbs`
+2. `%USERPROFILE%\\.agents\\skills`
+3. `$CODEX_HOME/skills`（如果 `CODEX_HOME` 已设置）
+4. `%USERPROFILE%\\.codex\\skills`
+
+命中规则：
+
+- 候选目录必须至少包含 `dbs\\SKILL.md`
+- 如果找到多个候选目录，先向用户说明，再选择正在生效的那个
+- 如果一个都找不到，就停止并说明没有检测到已安装的 dbskill
+
+### Step 2：读取本地版本信息（可选）
+
+- 如果安装目录附近存在 `VERSION` 文件，读取它
+- 如果没有，就告诉用户「当前版本未知」
+- 不要因为缺少版本文件而中止升级
+
+### Step 3：准备上游源
+
+优先级：
+
+1. 用户明确提供的 zip 或本地目录
+2. 官方仓库：`https://github.com/dontbesilent2025/dbskill`
+
+准备上游源时要做的检查：
+
+- 上游源里必须有 `skills/dbs/SKILL.md`
+- 如果仓库根目录有 `VERSION`，读取远程版本
+- 如果没有版本文件，就把版本标记为「未知」，改用变更摘要代替版本对比
+- 如果用户只是要求“检查有没有更新”，做到只读比较就停，不要写盘
+
+### Step 4：备份当前安装
+
+- 在安装目录下创建时间戳备份目录，例如 `.dbskill-backup-YYYYMMDD-HHMMSS`
+- 只备份官方目录清单里实际存在的目录
+- 记录完整备份路径
+- 如果一个官方目录都没找到，就不要创建空备份
+
+### Step 5：执行替换
+
+Windows 下优先用 PowerShell 原生命令。
+
+替换规则：
+
+- 逐个验证目标目录路径，确保都在选定的安装目录内
+- 逐个删除和复制，不要用宽泛通配符一把删整个 skills 目录
+- 只处理官方目录清单里的目录
+- 覆盖完成后，确认每个已更新目录都存在 `SKILL.md`
+
+### Step 6：失败恢复
+
+如果任一步失败：
+
+- 停止继续写盘
+- 用备份逐个恢复已经改动过的目录
+- 明确告诉用户失败点、恢复结果、以及还需要什么人工处理
+
+### Step 7：整理更新摘要
+
+优先级：
+
+1. 如果官方仓库有 `README.md` 或发布说明，就基于这些内容总结变化
+2. 如果没有，就基于新旧目录差异总结变化
+3. 如果拿不到说明，就诚实告诉用户只能确认目录已更新，无法给出完整变更日志
+
+建议输出格式：
+
+```text
+dbskill 升级完成
+- 安装目录：{INSTALL_DIR}
+- 备份目录：{BACKUP_DIR 或 未创建}
+- 本地版本：{OLD_VERSION 或 未知}
+- 上游版本：{REMOTE_VERSION 或 未知}
+- 已更新目录：{目录列表}
+- 变化摘要：
+  - {要点 1}
+  - {要点 2}
 ```
 
-### Step 2: 获取当前版本
+## 安全规则
 
-```bash
-OLD_VERSION=$(cat "$HOME/.claude/skills/dbskill-upgrade/../../VERSION" 2>/dev/null || echo "unknown")
-echo "Current version: $OLD_VERSION"
-```
-
-### Step 3: 获取远程版本
-
-```bash
-REMOTE_VERSION=$(curl -sL https://raw.githubusercontent.com/dontbesilent2025/dbskill/main/VERSION || echo "")
-if [ -z "$REMOTE_VERSION" ]; then
-  echo "ERROR: Cannot fetch remote version"
-  exit 1
-fi
-echo "Remote version: $REMOTE_VERSION"
-```
-
-### Step 4: 比较版本
-
-如果 `OLD_VERSION` 等于 `REMOTE_VERSION`，告诉用户已是最新版本，结束。
-
-否则继续升级。
-
-### Step 5: 备份当前版本
-
-```bash
-BACKUP_DIR="$HOME/.claude/skills/.dbskill-backup-$(date +%Y%m%d-%H%M%S)"
-mkdir -p "$BACKUP_DIR"
-cp -r "$HOME/.claude/skills"/dbs* "$BACKUP_DIR/" 2>/dev/null || true
-echo "Backup created: $BACKUP_DIR"
-```
-
-### Step 6: 下载最新版本
-
-```bash
-TMP_DIR=$(mktemp -d)
-git clone --depth 1 https://github.com/dontbesilent2025/dbskill.git "$TMP_DIR/dbskill"
-if [ $? -ne 0 ]; then
-  echo "ERROR: Failed to clone repository"
-  exit 1
-fi
-echo "Downloaded to: $TMP_DIR/dbskill"
-```
-
-### Step 7: 替换旧版本
-
-```bash
-rm -rf "$HOME/.claude/skills"/dbs*
-cp -r "$TMP_DIR/dbskill/skills"/dbs* "$HOME/.claude/skills/"
-rm -rf "$TMP_DIR"
-echo "Upgrade completed"
-```
-
-如果复制失败，从备份恢复：
-
-```bash
-if [ $? -ne 0 ]; then
-  echo "ERROR: Upgrade failed, restoring from backup..."
-  rm -rf "$HOME/.claude/skills"/dbs*
-  cp -r "$BACKUP_DIR"/* "$HOME/.claude/skills/"
-  echo "Restored from backup"
-  exit 1
-fi
-```
-
-### Step 8: 显示更新内容
-
-读取 `$HOME/.claude/skills/dbs/../../README.md`（如果存在），提取从 `OLD_VERSION` 到 `REMOTE_VERSION` 之间的更新内容。
-
-格式：
-
-```
-dbskill v{REMOTE_VERSION} — 从 v{OLD_VERSION} 升级成功！
-
-更新内容：
-- [从 README 提取的更新要点]
-
-升级完成！
-```
-
-### Step 9: 清理备份
-
-询问用户是否删除备份：
-
-```bash
-echo "Backup location: $BACKUP_DIR"
-echo "Keep backup? (will be auto-deleted in 7 days if not used)"
-```
-
-不强制删除，让用户自己决定。
-
-## 错误处理
-
-- 网络失败：提示用户检查网络连接
-- Git clone 失败：从备份恢复
-- 文件复制失败：从备份恢复
-
-## 注意事项
-
-- 只支持通过 `~/.claude/skills/` 安装的版本
-- 升级前自动备份，失败时自动恢复
-- 不需要用户手动操作 git
+- 不要假设用户在用 Claude Code
+- 不要把 `.agents/skills`、`.codex/skills` 以外的目录当成安装目录
+- 不要删除无关 skill
+- 不要因为缺少版本文件就拒绝升级
+- 如果写入目录超出当前工作区，先申请用户授权
+- 如果需要联网下载而当前环境受限，先申请用户授权

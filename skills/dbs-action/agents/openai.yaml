@@ -1,0 +1,7 @@
+interface:
+  display_name: "DBS Action"
+  short_description: "Diagnose what is really blocking action"
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+  brand_color: "#516179"
+  default_prompt: "Use $dbs-action to diagnose what I am avoiding when I already know the right move."

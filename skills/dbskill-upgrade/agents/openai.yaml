@@ -1,0 +1,10 @@
+interface:
+  display_name: "DBS Upgrade"
+  short_description: "Check, compare, repair, or update installed DBS skills"
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+  brand_color: "#3C6EA8"
+  default_prompt: "Use $dbskill-upgrade to safely compare, repair, or update the installed dbskill package."
+
+policy:
+  allow_implicit_invocation: false
