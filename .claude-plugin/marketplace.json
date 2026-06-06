@@ -4,8 +4,8 @@
     "name": "dontbesilent2025"
   },
   "metadata": {
-    "description": "dontbesilent 商业诊断工具箱 — 从 12,307 条推文中提炼方法论，做成 18 个 Claude Code skill",
-    "version": "2.9.0"
+    "description": "dontbesilent 商业诊断工具箱 — 从 12,307 条推文中提炼方法论，做成 21 个 Claude Code skill",
+    "version": "2.14.2"
   },
   "plugins": [
     {
@@ -57,6 +57,16 @@
       "category": "content-creation",
       "keywords": ["content", "creation", "copywriting", "social-media", "chinese"],
       "skills": ["./skills/dbs-content"]
+    },
+    {
+      "name": "dbs-content-system",
+      "description": "dontbesilent 内容结构化系统。把本地大量文稿、推文、选题、案例和课程稿搭成一个可持续生长的内容结构化工程：先审计内容规模与边界，再建立新工程、复制素材、抽取内容单元、生成主题地图与选题装配稿。",
+      "source": "./",
+      "strict": false,
+      "version": "1.0.0",
+      "category": "workflow-infrastructure",
+      "keywords": ["content-system", "knowledge-project", "obsidian", "asset-structuring", "agent-workflow", "chinese"],
+      "skills": ["./skills/dbs-content-system"]
     },
     {
       "name": "dbs-hook",
@@ -130,7 +140,7 @@
     },
     {
       "name": "dbs-agent-migration",
-      "description": "Agent 工作台迁移。把任意项目整理成 Claude Code / Codex 双端一致的 Agent 工作台：审计规则文件、识别真源、统一命名与 bridge。",
+      "description": "Agent 工作台迁移。把任意项目整理成 Claude Code / Codex / Grok 三端一致的 Agent 工作台：审计规则文件、识别真源、统一命名与 bridge。",
       "source": "./",
       "strict": false,
       "version": "1.0.0",
@@ -177,6 +187,26 @@
       "category": "business-diagnostics",
       "keywords": ["goal", "clarity", "wittgenstein", "language-game", "chinese"],
       "skills": ["./skills/dbs-goal"]
+    },
+    {
+      "name": "dbs-good-question",
+      "description": "dontbesilent 好问题生成器。把模糊问题改写成 Agent 可推理、可批评、可验证的问题说明书，并判断自动化解决程度。",
+      "source": "./",
+      "strict": false,
+      "version": "1.0.0",
+      "category": "thinking-tools",
+      "keywords": ["problem", "question", "agent", "automation", "explanation", "hard-to-vary", "chinese"],
+      "skills": ["./skills/dbs-good-question"]
+    },
+    {
+      "name": "dbs-decision",
+      "description": "dontbesilent 个人决策系统。把任何一个需要长期跟踪的领域（业务、关系、健康、职业、学习、投资……）做成本地知识工程：四层结构（事实/规律/定格/待解）+ 来源标签 + 写完不改的快照 + 能炼出规律的概念库。支持立案、回填、状态画像、隐私模式。",
+      "source": "./",
+      "strict": false,
+      "version": "2.0.0",
+      "category": "state-management",
+      "keywords": ["decision", "tracking", "knowledge-project", "personal", "snapshot", "concept-library", "chinese"],
+      "skills": ["./skills/dbs-decision"]
     },
     {
       "name": "dbs-learning",

@@ -1,0 +1,80 @@
+%%{init: {
+  "theme": "base",
+  "themeVariables": {
+    "background": "#ffffff",
+    "primaryColor": "#ffffff",
+    "primaryTextColor": "#111111",
+    "primaryBorderColor": "#111111",
+    "lineColor": "#111111",
+    "secondaryColor": "#ffffff",
+    "secondaryTextColor": "#111111",
+    "secondaryBorderColor": "#111111",
+    "tertiaryColor": "#ffffff",
+    "tertiaryTextColor": "#111111",
+    "tertiaryBorderColor": "#111111",
+    "clusterBkg": "#ffffff",
+    "clusterBorder": "#111111",
+    "defaultLinkColor": "#111111",
+    "fontFamily": "Helvetica, Arial, PingFang SC, Microsoft YaHei, sans-serif"
+  },
+  "flowchart": {
+    "htmlLabels": true,
+    "curve": "basis"
+  }
+}}%%
+
+flowchart TD
+    A["/dbs 主入口"]
+
+    B["/dbs-diagnosis"]
+    C["/dbs-benchmark"]
+    D["/dbs-content"]
+    E["/dbs-hook"]
+    F["/dbs-xhs-title"]
+    G["/dbs-ai-check"]
+    H["/dbs-goal"]
+    I["/dbs-good-question"]
+    J["/dbs-decision"]
+    K["/dbs-save"]
+    L["/dbs-restore"]
+    M["/dbs-report"]
+
+    A --> B
+    A --> C
+    A --> D
+    A --> G
+    A --> H
+    A --> I
+    A --> J
+    A --> K
+    A --> L
+    A --> M
+
+    B --> C
+    B --> D
+    B --> J
+
+    C --> J
+
+    D --> E
+    D --> F
+    D --> G
+
+    H --> J
+    I --> J
+
+    B --> K
+    C --> K
+    D --> K
+    H --> K
+    I --> K
+    J --> K
+
+    K --> M
+
+    L --> B
+    L --> C
+    L --> D
+    L --> H
+    L --> I
+    L --> J

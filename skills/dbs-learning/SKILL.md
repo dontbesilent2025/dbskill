@@ -325,7 +325,7 @@ description: |
 | 目标清晰化 | `/dbs-goal` |
 | 执行力诊断 | `/dbs-action` |
 | 慢就是快 | `/dbs-slowisfast` |
-| 好解释生成 | `/dbs-generate-explanation` |
+| 好问题生成 / Agent 可解性判断 | `/dbs-good-question` |
 
 如果用户在学习过程中提出具体业务问题，提示他可以转入对应诊断 skill。
 
