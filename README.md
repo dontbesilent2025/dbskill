@@ -55,13 +55,8 @@ Trae Solo 一个 zip 装一个 skill。从 [GitHub Releases](https://github.com/
 如果想本地构建，运行 `bash tools/build-skills.sh`，产物在 `dist/skills/`。
 
 ## 付费答疑群
+<img width="888" height="1131" alt="521d978d36edd572c88b70cec7bb0463" src="https://github.com/user-attachments/assets/b9ce032f-45a6-470d-9352-6998dfaf9b51" />
 
-如果你想加入我的付费答疑群，可以扫码查看：
-
-![付费答疑群二维码](docs/paid-qa-group-qrcode.png)
-
-也可以直接打开这个链接：
-[https://mp.weixin.qq.com/s/V7Dr0-75VYZOLJ6lbT_s0w](https://mp.weixin.qq.com/s/V7Dr0-75VYZOLJ6lbT_s0w)
 
 ## 如何更新 dbskill
 
