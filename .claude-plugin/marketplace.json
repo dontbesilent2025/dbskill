@@ -13,7 +13,7 @@
       "description": "dontbesilent 商业工具箱主入口。根据你的问题自动路由到最合适的诊断工具。",
       "source": "./",
       "strict": false,
-      "version": "1.0.0",
+      "version": "2.15.1",
       "category": "business-diagnostics",
       "keywords": [
         "business",
@@ -31,7 +31,7 @@
       "description": "dontbesilent 商业模式诊断。两种模式：问诊（消解你的问题）和体检（拆解你的商业模式）。",
       "source": "./",
       "strict": false,
-      "version": "1.0.0",
+      "version": "2.15.1",
       "category": "business-diagnostics",
       "keywords": [
         "business-model",
@@ -49,7 +49,7 @@
       "description": "dontbesilent 对标分析。用五重过滤法帮你找到值得模仿的对标，排除一切关于「我」的噪音。",
       "source": "./",
       "strict": false,
-      "version": "1.0.0",
+      "version": "2.15.1",
       "category": "business-diagnostics",
       "keywords": [
         "benchmark",
@@ -67,7 +67,7 @@
       "description": "dontbesilent 执行力诊断。用阿德勒心理学框架诊断你「知道该做什么但就是不做」的真正原因。",
       "source": "./",
       "strict": false,
-      "version": "1.0.0",
+      "version": "2.15.1",
       "category": "business-diagnostics",
       "keywords": [
         "psychology",
@@ -85,7 +85,7 @@
       "description": "dontbesilent 内容创作诊断。选题通过后，诊断怎么把这个选题做成好内容。",
       "source": "./",
       "strict": false,
-      "version": "1.0.0",
+      "version": "2.15.1",
       "category": "content-creation",
       "keywords": [
         "content",
@@ -103,7 +103,7 @@
       "description": "dontbesilent 内容结构化系统。把本地大量文稿、推文、选题、案例和课程稿搭成一个可持续生长的内容结构化工程：先审计内容规模与边界，再建立新工程、复制素材、抽取内容单元、生成主题地图与选题装配稿。",
       "source": "./",
       "strict": false,
-      "version": "1.0.0",
+      "version": "2.15.1",
       "category": "workflow-infrastructure",
       "keywords": [
         "content-system",
@@ -122,7 +122,7 @@
       "description": "dontbesilent 短视频开头优化。诊断开头问题 + 生成优化方案。",
       "source": "./",
       "strict": false,
-      "version": "1.0.0",
+      "version": "2.15.1",
       "category": "content-creation",
       "keywords": [
         "video",
@@ -141,7 +141,7 @@
       "description": "小红书标题公式工具。从 75 个验证过的爆款公式中，帮你挑对的、用对的、理解为什么用这个。",
       "source": "./",
       "strict": false,
-      "version": "1.0.0",
+      "version": "2.15.1",
       "category": "content-creation",
       "keywords": [
         "xiaohongshu",
@@ -160,7 +160,7 @@
       "description": "dontbesilent 概念拆解。用维特根斯坦 + 奥派经济学的方法，把模糊的商业概念拆到原子级别。",
       "source": "./",
       "strict": false,
-      "version": "1.0.0",
+      "version": "2.15.1",
       "category": "thinking-tools",
       "keywords": [
         "wittgenstein",
@@ -178,7 +178,7 @@
       "description": "哈耶克 × 米塞斯 × Claude 三人对话。奥派经济学视角的多角色讨论。",
       "source": "./",
       "strict": false,
-      "version": "1.0.0",
+      "version": "2.15.1",
       "category": "thinking-tools",
       "keywords": [
         "austrian-economics",
@@ -197,7 +197,7 @@
       "description": "定向聊天室。根据话题推荐或接受用户指定的专家，模拟多角色对话 + 判官总结。",
       "source": "./",
       "strict": false,
-      "version": "1.0.0",
+      "version": "2.15.1",
       "category": "thinking-tools",
       "keywords": [
         "chatroom",
@@ -215,7 +215,7 @@
       "description": "dontbesilent AI 写作特征识别。扫描文案中的 AI 生成痕迹，输出检测报告。默认只诊断不改。",
       "source": "./",
       "strict": false,
-      "version": "1.0.0",
+      "version": "2.15.1",
       "category": "content-creation",
       "keywords": [
         "ai-detection",
@@ -233,7 +233,7 @@
       "description": "微信公众号 HTML 生成。把 Markdown 转成可粘贴到微信公众号后台的 HTML，内置 15 种经典媒体/科技产品/中文公众号风格。",
       "source": "./",
       "strict": false,
-      "version": "1.0.0",
+      "version": "2.15.1",
       "category": "content-creation",
       "keywords": [
         "wechat",
@@ -252,7 +252,7 @@
       "description": "dontbesilent 慢就是快。帮创业者找到看起来更慢但长期更快的方法，用摩擦建造资产。",
       "source": "./",
       "strict": false,
-      "version": "1.0.0",
+      "version": "2.15.1",
       "category": "business-diagnostics",
       "keywords": [
         "slow-is-fast",
@@ -270,7 +270,7 @@
       "description": "Agent 工作台迁移。把任意项目整理成 Claude Code / Codex / Grok 三端一致的 Agent 工作台：审计规则文件、识别真源、统一命名与 bridge。",
       "source": "./",
       "strict": false,
-      "version": "1.0.0",
+      "version": "2.15.1",
       "category": "workflow-infrastructure",
       "keywords": [
         "agent",
@@ -290,7 +290,7 @@
       "description": "把当前诊断的关键状态存到本地，下次回来可以接着用。诊断从单次问诊升级为可累积的状态。",
       "source": "./",
       "strict": false,
-      "version": "1.0.0",
+      "version": "2.15.1",
       "category": "state-management",
       "keywords": [
         "save",
@@ -309,7 +309,7 @@
       "description": "把上次诊断的状态拉出来，接着用。配合 dbs-save，跨对话接续诊断。",
       "source": "./",
       "strict": false,
-      "version": "1.0.0",
+      "version": "2.15.1",
       "category": "state-management",
       "keywords": [
         "restore",
@@ -327,7 +327,7 @@
       "description": "把多次 dbs-save 攒下来的诊断状态合并成一份可交付的 markdown 报告，可分享、可归档。",
       "source": "./",
       "strict": false,
-      "version": "1.0.0",
+      "version": "2.15.1",
       "category": "state-management",
       "keywords": [
         "report",
@@ -345,7 +345,7 @@
       "description": "dontbesilent 目标清晰化。用维特根斯坦方法把模糊目标审计成可检查的交付物。",
       "source": "./",
       "strict": false,
-      "version": "1.0.0",
+      "version": "2.15.1",
       "category": "business-diagnostics",
       "keywords": [
         "goal",
@@ -363,7 +363,7 @@
       "description": "dontbesilent 好问题生成器。把模糊问题改写成 Agent 可推理、可批评、可验证的问题说明书，并判断自动化解决程度。",
       "source": "./",
       "strict": false,
-      "version": "1.0.0",
+      "version": "2.15.1",
       "category": "thinking-tools",
       "keywords": [
         "problem",
@@ -383,7 +383,7 @@
       "description": "dontbesilent 个人决策系统。把任何一个需要长期跟踪的领域（业务、关系、健康、职业、学习、投资……）做成本地知识工程：四层结构（事实/规律/定格/待解）+ 来源标签 + 写完不改的快照 + 能炼出规律的概念库。支持立案、回填、状态画像、隐私模式。",
       "source": "./",
       "strict": false,
-      "version": "2.0.0",
+      "version": "2.15.1",
       "category": "state-management",
       "keywords": [
         "decision",
@@ -403,7 +403,7 @@
       "description": "dontbesilent 交互式学习。把一个课题拆成连续学习文章，根据用户在上一篇中的反馈调整下一篇的深度、角度和节奏。",
       "source": "./",
       "strict": false,
-      "version": "1.0.0",
+      "version": "2.15.1",
       "category": "learning",
       "keywords": [
         "learning",
@@ -421,7 +421,7 @@
       "description": "传播心理解码。给定一段内容，用 5 个经典传播学理论解码它为什么能引起受众共鸣，分析受众情绪底层和有效立场，输出聊天室的讨论方向。",
       "source": "./",
       "strict": false,
-      "version": "1.0.0",
+      "version": "2.15.1",
       "category": "content-creation",
       "keywords": [
         "content",
@@ -439,7 +439,7 @@
       "description": "文稿共鸣诊断。写完文稿但心里没底——怕没流量、怕没戳中观众、怕完播率低。用传播心理学框架诊断文稿有没有引起共鸣、哪里出了问题、具体怎么改。",
       "source": "./",
       "strict": false,
-      "version": "1.0.0",
+      "version": "2.15.1",
       "category": "content-creation",
       "keywords": [
         "draft",
