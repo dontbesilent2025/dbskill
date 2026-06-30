@@ -16,6 +16,7 @@ jobs:
       - name: Sync marketplace.json plugin versions
         run: |
           VERSION=$(cat VERSION)
+          echo "VERSION=$VERSION" >> $GITHUB_ENV
           python3 -c "
           import json
           version = '$VERSION'
@@ -30,5 +31,5 @@ jobs:
       - name: Commit synced versions
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "chore: sync plugin versions to $(cat VERSION)"
+          commit_message: "chore: sync plugin versions to ${{ env.VERSION }}"
           file_pattern: ".claude-plugin/marketplace.json"
