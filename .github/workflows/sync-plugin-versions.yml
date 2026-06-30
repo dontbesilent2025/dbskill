@@ -1,0 +1,35 @@
+name: Sync plugin versions
+
+on:
+  push:
+    branches: [main]
+    paths: ['VERSION']
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Sync marketplace.json plugin versions
+        run: |
+          VERSION=$(cat VERSION)
+          echo "VERSION=$VERSION" >> $GITHUB_ENV
+          python3 -c "
+          import json
+          version = '$VERSION'
+          path = '.claude-plugin/marketplace.json'
+          data = json.load(open(path))
+          for p in data['plugins']:
+              p['version'] = version
+          json.dump(data, open(path, 'w'), indent=2, ensure_ascii=False)
+          print(f'Synced {len(data[\"plugins\"])} plugins to {version}')
+          "
+
+      - name: Commit synced versions
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: sync plugin versions to ${{ env.VERSION }}"
+          file_pattern: ".claude-plugin/marketplace.json"
