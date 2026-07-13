@@ -24,6 +24,9 @@ jobs:
             exit 1
           fi
 
+      - name: Verify marketplace plugin versions
+        run: python3 tools/check-release-versions.py
+
       - name: Build skill bundle
         run: bash tools/build-skills.sh
 
