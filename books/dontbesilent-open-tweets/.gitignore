@@ -1,0 +1,5 @@
+# 目录默认只公开推文集的两个成品文件。
+*
+!.gitignore
+!dontbesilent-开源推文集.md
+!dontbesilent-开源推文集.pdf
