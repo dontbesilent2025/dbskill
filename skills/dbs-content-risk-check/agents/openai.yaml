@@ -1,4 +1,4 @@
 interface:
-  display_name: "dbs-content-risk-check"
+  display_name: "dbs-content-risk-check（内容发布风险检查）"
   short_description: "区分机器审核与实质问题，给出最小修改和视频贴片文字"
   default_prompt: "使用 $dbs-content-risk-check 检查这份内容，分别说明平台机器可能识别什么、内容本身有什么实质问题，并给出最小修改；确实需要补充视频语境边界时，再生成真实准确的三行贴片小字。"

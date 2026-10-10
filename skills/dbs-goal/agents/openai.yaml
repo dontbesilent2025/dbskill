@@ -1,4 +1,4 @@
 interface:
-  display_name: "dbs-goal"
+  display_name: "dbs-goal（目标与验收标准）"
   short_description: "提取任务约束与验收标准，把模糊目标整理成可行动、可检查的交付物"
   default_prompt: "使用 $dbs-goal，提取当前任务的约束与验收标准并明确交付物。"

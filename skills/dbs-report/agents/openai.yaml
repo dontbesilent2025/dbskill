@@ -1,4 +1,4 @@
 interface:
-  display_name: "dbs-report"
+  display_name: "dbs-report（诊断报告汇总）"
   short_description: "合并多次 dbs-save 诊断存档，生成带日期、索引和来源的可交付报告"
   default_prompt: "使用 $dbs-report，合并当前项目的诊断存档并生成可交付报告。"

@@ -1,4 +1,4 @@
 interface:
-  display_name: "dbs-resonate"
+  display_name: "dbs-resonate（文稿共鸣诊断）"
   short_description: "诊断已写稿件的共鸣断点，定位原句并给出具体删改建议"
   default_prompt: "使用 $dbs-resonate，检查这篇已写成的稿件哪里没有打中目标受众，指出具体原句、共鸣断点和删改建议。聚焦稿件修改，不评估整体流量和商业价值。"

@@ -1,4 +1,4 @@
 interface:
-  display_name: "dbs-action"
+  display_name: "dbs-action（行动阻滞诊断）"
   short_description: "诊断知道该做却迟迟不做的心理与行动阻力，给出可立即执行的下一步"
   default_prompt: "使用 $dbs-action，诊断当前行动阻力并给出可立即执行的下一步。"

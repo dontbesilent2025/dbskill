@@ -4,7 +4,7 @@
 
 > 面向创业者与内容创作者的中文 AI Skills 工具箱。把真实业务、内容与行动问题交给 Agent，获得清晰判断和可以立刻执行的下一步。
 
-[![Version](https://img.shields.io/badge/version-2.18.47-2563EB.svg?style=flat-square)](VERSION)
+[![Version](https://img.shields.io/badge/version-2.18.48-2563EB.svg?style=flat-square)](VERSION)
 [![skills.sh](https://skills.sh/b/dontbesilent2025/dbskill)](https://skills.sh/dontbesilent2025/dbskill)
 [![License](https://img.shields.io/badge/license-CC%20BY--NC%204.0-16A34A.svg?style=flat-square)](LICENSE)
 
@@ -12,7 +12,7 @@
 
 dbskill 由 [dontbesilent](https://x.com/dontbesilent) 创建。方法资料包含从 16,152 条公开推文中整理的 4,176 个知识原子；工具箱提供 34 个当前业务 Skill、2 个兼容旧入口和 1 个系统更新入口。
 
-**本次更新：** 新增人员任务委派，写清要求、处理反馈并验收成果；缺少飞书工具时提供可转发文字。
+**本次更新：** Codex 技能列表同时显示英文标识和已确认中文名，方便用户识别与调用。
 
 [快速开始](#快速开始) · [安装](#安装) · [能力一览](#能力一览) · [公开推文集](#公开推文集) · [完整使用手册](docs/新手入门.md) · [更新记录](https://github.com/dontbesilent2025/dbskill/commits/main)
 

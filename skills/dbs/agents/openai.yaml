@@ -1,4 +1,4 @@
 interface:
-  display_name: "dbs"
+  display_name: "dbs（Skill 导航）"
   short_description: "联网查询隐藏款目录、按编号读取预制方法，或为当前问题编排正式 Skill"
   default_prompt: "使用 $dbs，查看全部隐藏款、输入三位编号执行任务，或描述问题让我编排正式 Skill。"

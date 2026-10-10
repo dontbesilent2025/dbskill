@@ -1,4 +1,4 @@
 interface:
-  display_name: "dbs-content-value"
+  display_name: "dbs-content-value（内容价值评估）"
   short_description: "评估内容会吸引谁、开头能否留人，以及可能的流量和商业价值"
   default_prompt: "使用 $dbs-content-value，评估这条内容整体会吸引谁、开头能否留人，以及可能的流量和商业价值，并给出优先修改方向。请不要把任务改成整篇逐句共鸣改稿、传播机制解读或单独重写短视频开头。"

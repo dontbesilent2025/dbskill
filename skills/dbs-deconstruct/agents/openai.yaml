@@ -1,4 +1,4 @@
 interface:
-  display_name: "dbs-deconstruct"
+  display_name: "dbs-deconstruct（概念拆解）"
   short_description: "结合维特根斯坦与奥派经济学拆解模糊概念，明确边界、关系与现实用法"
   default_prompt: "使用 $dbs-deconstruct，拆解当前模糊概念并明确其边界与现实用法。"

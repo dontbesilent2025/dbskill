@@ -1,4 +1,4 @@
 interface:
-  display_name: "dbs-chatroom"
+  display_name: "dbs-chatroom（专家聊天室）"
   short_description: "根据话题推荐或接受指定专家，开展多角色对话并由判官汇总结论"
   default_prompt: "使用 $dbs-chatroom，为当前话题选择合适角色并开展多角色对话。"

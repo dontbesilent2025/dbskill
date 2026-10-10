@@ -1,4 +1,4 @@
 interface:
-  display_name: "dbs-standard-answer"
+  display_name: "dbs-standard-answer（标准答案研究）"
   short_description: "先挖掘相关领域、作者和理论，再研究历史同构标准答案"
   default_prompt: "使用 $dbs-standard-answer，先直接回答并挖掘当前问题相关的领域、作者和可信理论，再寻找历史同构的成功、失败与反例，提炼带条件的标准答案。"

@@ -1,4 +1,4 @@
 interface:
-  display_name: "dbs-decision"
+  display_name: "dbs-decision（决策记录与复盘）"
   short_description: "把长期业务、关系或职业问题建成可回填、可复盘的本地决策知识工程"
   default_prompt: "使用 $dbs-decision，把当前长期问题纳入可回填、可复盘的决策知识工程。"

@@ -1,4 +1,4 @@
 interface:
-  display_name: "dbs-title-cover-intro"
+  display_name: "dbs-title-cover-intro（标题封面与开头）"
   short_description: "用 12 个理论视角确定内容角度，再按拍摄状态生成标题、封面标题和视频开头"
   default_prompt: "使用 $dbs-title-cover-intro，先确定当前内容角度与制作状态，再生成我需要的文字标题、封面标题或视频开头。"

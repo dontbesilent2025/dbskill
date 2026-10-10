@@ -1,4 +1,4 @@
 interface:
-  display_name: "dbs-diagnosis"
+  display_name: "dbs-diagnosis（商业诊断）"
   short_description: "自动识别具体困境或全面检查，定位商业模式中的关键问题"
   default_prompt: "使用 $dbs-diagnosis 诊断当前商业问题；根据用户材料自动选择合适的分析流程。"

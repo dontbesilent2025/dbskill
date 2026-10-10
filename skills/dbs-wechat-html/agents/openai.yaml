@@ -1,4 +1,4 @@
 interface:
-  display_name: "dbs-wechat-html"
+  display_name: "dbs-wechat-html（公众号排版）"
   short_description: "把 Markdown 转为可粘贴到微信公众号后台的 HTML，并应用指定视觉风格"
   default_prompt: "使用 $dbs-wechat-html，把当前 Markdown 转成微信公众号可用的 HTML。"

@@ -1,4 +1,4 @@
 interface:
-  display_name: "dbs-restore"
+  display_name: "dbs-restore（继续上次诊断）"
   short_description: "读取最近一次 dbs-save 存档，恢复诊断状态、未决问题与已确认下一步"
   default_prompt: "使用 $dbs-restore，读取最近存档并恢复当前项目的诊断状态。"

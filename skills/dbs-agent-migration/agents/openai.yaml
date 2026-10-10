@@ -1,4 +1,4 @@
 interface:
-  display_name: "dbs-agent-migration"
+  display_name: "dbs-agent-migration（多端 Agent 配置迁移）"
   short_description: "审计项目规则、Skill 真源与多端 bridge，统一 Agent 工作台结构和命名"
   default_prompt: "使用 $dbs-agent-migration，审计并统一当前 Agent 工作台的结构、真源与命名。"

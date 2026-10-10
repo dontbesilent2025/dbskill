@@ -1,4 +1,4 @@
 interface:
-  display_name: "dbs-video-extract"
+  display_name: "dbs-video-extract（视频信息与字幕提取）"
   short_description: "引导开通所需服务并提取短视频数据、语音文字稿与 Markdown"
   default_prompt: "使用 $dbs-video-extract，检查 API 配置并提取这个短视频的数据和文字稿。"

@@ -1,4 +1,4 @@
 interface:
-  display_name: "dbs-update"
+  display_name: "dbs-update（更新 dbskill）"
   short_description: "同步官方 dbskill 更新，保留用户存档、其他 Skill 与本地个性化配置"
   default_prompt: "使用 $dbs-update，同步官方 dbskill 更新并保留用户本地资产。"

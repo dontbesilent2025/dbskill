@@ -1,4 +1,4 @@
 interface:
-  display_name: "dbs-good-question"
+  display_name: "dbs-good-question（好问题改写）"
   short_description: "把模糊问题改写为 Agent 可推理、可批评、可验证的问题说明书"
   default_prompt: "使用 $dbs-good-question，把当前模糊问题改写成可推理、可批评、可验证的问题。"

@@ -1,4 +1,4 @@
 interface:
-  display_name: "dbs-save"
+  display_name: "dbs-save（诊断存档）"
   short_description: "把当前诊断结论、证据、未决问题和下一步保存为可恢复的本地状态"
   default_prompt: "使用 $dbs-save，保存当前诊断的结论、证据、未决问题与下一步。"

@@ -1,4 +1,4 @@
 interface:
-  display_name: "dbs-human-dispatch"
+  display_name: "dbs-human-dispatch（协作任务派发）"
   short_description: "结合人员资料委派任务，通过飞书或转发文字获取反馈、提供帮助并验收汇报"
   default_prompt: "使用 $dbs-human-dispatch，结合现有人员资料与工具，把当前任务交给适合的人并跟进反馈、验收和汇报。"

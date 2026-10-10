@@ -4,7 +4,7 @@
 
 > 起業家とコンテンツ制作者のための中国語 AI Skills ツールキット。ビジネス、コンテンツ、実行に関する現実の課題を Agent に渡し、明確な判断と次の具体的な行動を得られます。
 
-[![Version](https://img.shields.io/badge/version-2.18.47-111111.svg)](VERSION)
+[![Version](https://img.shields.io/badge/version-2.18.48-111111.svg)](VERSION)
 [![Skills](https://img.shields.io/badge/Skills-37-111111.svg)](docs/新手入门.md#skill-全目录)
 [![License](https://img.shields.io/badge/license-CC%20BY--NC%204.0-111111.svg)](LICENSE)
 
@@ -12,7 +12,7 @@
 
 dbskill は [dontbesilent](https://x.com/dontbesilent) が作成しました。公開投稿 16,152 件から整理した 4,176 件の知識原子を含み、現行の業務 Skill 34 個、旧版互換エントリ 2 個、更新エントリ 1 個を提供します。
 
-**今回の更新：** 担当者への依頼内容を明確にし、質問への回答と成果確認を支援します。飛書ツールがなくても転送用の文章を作成できます。
+**今回の更新：** Codex の Skill 一覧に英語の識別名と確認済みの中国語名を併記し、見分けて呼び出しやすくしました。
 
 [クイックスタート](#クイックスタート) · [インストール](#インストール) · [機能](#機能一覧) · [完全ガイド](docs/新手入门.md) · [変更履歴](https://github.com/dontbesilent2025/dbskill/commits/main)
 

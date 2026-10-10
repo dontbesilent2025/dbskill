@@ -1,4 +1,4 @@
 interface:
-  display_name: "dbs-jtbd"
+  display_name: "dbs-jtbd（用户任务分析）"
   short_description: "用 JTBD 识别用户想推进的进展、切换动机与选择标准，校准方案"
   default_prompt: "使用 $dbs-jtbd，识别用户想推进的进展、动机与选择标准。"

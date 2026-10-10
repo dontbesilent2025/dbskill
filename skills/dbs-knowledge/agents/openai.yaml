@@ -1,4 +1,4 @@
 interface:
-  display_name: "dbs-knowledge"
+  display_name: "dbs-knowledge（知识库搭建与维护）"
   short_description: "把本地文件夹建成 Agent 可查询、收录、维护和治理的结构化知识库"
   default_prompt: "使用 $dbs-knowledge，建立、查询或治理当前文件夹知识库。"

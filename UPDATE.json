@@ -1,5 +1,5 @@
 {
-  "version": "2.18.47",
-  "notice": "新增人员任务委派，写清要求、处理反馈并验收成果；缺少飞书工具时提供可转发文字。",
+  "version": "2.18.48",
+  "notice": "Codex 技能列表同时显示英文标识和已确认中文名，方便用户识别与调用",
   "details_url": "https://github.com/dontbesilent2025/dbskill/commits/main"
 }

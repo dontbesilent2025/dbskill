@@ -1,4 +1,4 @@
 interface:
-  display_name: "dbs-spread"
+  display_name: "dbs-spread（内容传播机制）"
   short_description: "解释已有内容引发共鸣或分享的机制、情绪和受众行动动机"
   default_prompt: "使用 $dbs-spread，解释这段已有内容为什么引发共鸣、情绪或分享，识别传播机制、有效立场和受众动机，并提炼讨论方向。不要改成整篇逐句改稿或整体流量商业价值评估。"

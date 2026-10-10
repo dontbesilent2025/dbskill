@@ -1,4 +1,4 @@
 interface:
-  display_name: "dbs-theory-grounding"
+  display_name: "dbs-theory-grounding（理论溯源）"
   short_description: "核验经验命题与理论来源，用可信学者理论重释案例并标明适用边界"
   default_prompt: "使用 $dbs-theory-grounding，核验当前命题并用可信理论重新解释案例。"

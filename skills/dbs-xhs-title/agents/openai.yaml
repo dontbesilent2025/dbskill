@@ -1,4 +1,4 @@
 interface:
-  display_name: "dbs-xhs-title"
+  display_name: "dbs-xhs-title（小红书标题（旧版））"
   short_description: "【deprecated】旧版兼容，从 75 个小红书标题公式中匹配合适触发器，生成并解释候选标题"
   default_prompt: "使用 $dbs-xhs-title，为当前内容匹配公式并生成小红书候选标题。"

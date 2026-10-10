@@ -1,4 +1,4 @@
 interface:
-  display_name: "dbs-learning"
+  display_name: "dbs-learning（交互式学习）"
   short_description: "把课题拆成连续学习文章，并根据每轮反馈调整深度、角度与节奏"
   default_prompt: "使用 $dbs-learning，把当前课题拆成根据反馈持续调整的学习文章。"

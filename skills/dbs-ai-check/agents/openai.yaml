@@ -1,4 +1,4 @@
 interface:
-  display_name: "dbs-ai-check"
+  display_name: "dbs-ai-check（AI 写作特征检查）"
   short_description: "识别文案中的 AI 写作痕迹，标记具体位置、特征类型与修改方向"
   default_prompt: "使用 $dbs-ai-check，识别当前文案中的 AI 写作痕迹并标记具体位置。"

@@ -1,4 +1,4 @@
 interface:
-  display_name: "dbs-content"
+  display_name: "dbs-content（内容策划）"
   short_description: "诊断选题如何转化为适合目标平台的内容，检查形式、标题、结构与表达"
   default_prompt: "使用 $dbs-content，诊断当前选题或初稿如何转化为目标平台内容。"

@@ -1,4 +1,4 @@
 interface:
-  display_name: "dbs-content-system"
+  display_name: "dbs-content-system（内容复用系统）"
   short_description: "审计本地内容资产并建立结构化工程，生成主题地图、内容单元与装配稿"
   default_prompt: "使用 $dbs-content-system，审计当前内容资产并建立可持续维护的结构化工程。"

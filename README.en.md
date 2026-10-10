@@ -4,7 +4,7 @@
 
 > A Chinese AI Skills toolkit for entrepreneurs and content creators. Give your Agent a real business, content, or execution problem, and get a clear judgment plus the next action you can take.
 
-[![Version](https://img.shields.io/badge/version-2.18.47-111111.svg)](VERSION)
+[![Version](https://img.shields.io/badge/version-2.18.48-111111.svg)](VERSION)
 [![Skills](https://img.shields.io/badge/Skills-37-111111.svg)](docs/新手入门.md#skill-全目录)
 [![License](https://img.shields.io/badge/license-CC%20BY--NC%204.0-111111.svg)](LICENSE)
 
@@ -12,7 +12,7 @@
 
 Created by [dontbesilent](https://x.com/dontbesilent), dbskill includes 4,176 knowledge atoms drawn from 16,152 public posts. The toolkit provides 34 current business Skills, 2 legacy entries, and 1 system update entry.
 
-**This update:** Delegate work to people with clear requirements, handle feedback, and check deliverables. Without Feishu tools, generate text the user can forward.
+**This update:** Codex Skill lists now show each English identifier with its confirmed Chinese name, making Skills easier to recognize and invoke.
 
 [Quick start](#quick-start) · [Install](#install) · [Capabilities](#capabilities) · [Full guide](docs/新手入门.md) · [Changes](https://github.com/dontbesilent2025/dbskill/commits/main)
 

@@ -1,4 +1,4 @@
 interface:
-  display_name: "dbs-install-skill"
+  display_name: "dbs-install-skill（Skill 安装管理）"
   short_description: "把 Skill 安装到 Claude、Codex、WorkBuddy 与 Grok"
   default_prompt: "使用 $dbs-install-skill，把目标 Skill 安装到本机已有的 Agent。"

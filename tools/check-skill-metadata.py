@@ -10,6 +10,7 @@ from pathlib import Path
 ROOT_DIR = Path(__file__).resolve().parents[1]
 SKILLS_DIR = ROOT_DIR / "skills"
 MARKETPLACE_PATH = ROOT_DIR / ".claude-plugin" / "marketplace.json"
+DISPLAY_NAMES_PATH = ROOT_DIR / "tools" / "skill-display-names.json"
 
 SPEC_DESCRIPTION_MAX = 1024
 PROJECT_DESCRIPTION_WARNING = 300
@@ -101,10 +102,10 @@ def check_openai_metadata(skill_name: str, errors: list[str]) -> tuple[str, str]
     display_name = read_quoted_yaml_scalar(text, "display_name")
     short_description = read_quoted_yaml_scalar(text, "short_description")
     default_prompt = read_quoted_yaml_scalar(text, "default_prompt")
-    if display_name != skill_name:
+    if not display_name.startswith(f"{skill_name}（") or not display_name.endswith("）"):
         errors.append(
-            f"{relative_path} 的 display_name 必须与英文标准名完全一致；"
-            f"应为 {skill_name!r}，当前为 {display_name!r}"
+            f"{relative_path} 的 display_name 必须采用“{skill_name}（中文名）”格式；"
+            f"当前为 {display_name!r}"
         )
     if not (SHORT_DESCRIPTION_MIN <= len(short_description) <= SHORT_DESCRIPTION_MAX):
         errors.append(
@@ -129,11 +130,24 @@ def check_openai_metadata(skill_name: str, errors: list[str]) -> tuple[str, str]
 def main() -> None:
     marketplace = json.loads(MARKETPLACE_PATH.read_text(encoding="utf-8"))
     formal_names = [plugin["name"] for plugin in marketplace.get("plugins", [])]
+    registry = json.loads(DISPLAY_NAMES_PATH.read_text(encoding="utf-8"))
+    approved_names = registry.get("names", {})
     errors: list[str] = []
     warnings: list[str] = []
     description_lengths: dict[str, int] = {}
     display_names: dict[str, str] = {}
     short_descriptions: dict[str, str] = {}
+
+    missing_registry = sorted(set(formal_names) - set(approved_names))
+    stale_registry = sorted(set(approved_names) - set(formal_names))
+    if missing_registry:
+        errors.append(
+            "正式 Skill 尚未確認中文展示名，禁止發布：" + ", ".join(missing_registry)
+        )
+    if stale_registry:
+        errors.append(
+            "中文展示名登記表包含不在 marketplace 的 Skill：" + ", ".join(stale_registry)
+        )
 
     for name in formal_names:
         skill_path = SKILLS_DIR / name / "SKILL.md"
@@ -156,6 +170,20 @@ def main() -> None:
             errors.append(
                 f"skills/{name}/SKILL.md 的 name 为 {declared_name!r}，应为 {name!r}"
             )
+        expected_display_name = f"{name}（{approved_names.get(name, '').strip()}）"
+        if not approved_names.get(name, "").strip():
+            errors.append(f"正式 Skill {name} 的中文展示名尚未確認")
+        else:
+            metadata_path = SKILLS_DIR / name / "agents" / "openai.yaml"
+            if metadata_path.is_file():
+                display_name = read_quoted_yaml_scalar(
+                    metadata_path.read_text(encoding="utf-8"), "display_name"
+                )
+                if display_name != expected_display_name:
+                    errors.append(
+                        f"skills/{name}/agents/openai.yaml 的 display_name 为 {display_name!r}，"
+                        f"应与已确认名称一致：{expected_display_name!r}"
+                    )
         if not description:
             errors.append(f"skills/{name}/SKILL.md 的 description 不能为空")
             continue
@@ -204,10 +232,7 @@ def main() -> None:
                 "可能被通用安装器公开发现"
             )
 
-    dbs_skill_names = sorted(
-        skill_path.parent.name for skill_path in SKILLS_DIR.glob("dbs*/SKILL.md")
-    )
-    for skill_name in dbs_skill_names:
+    for skill_name in formal_names:
         display_name, short_description = check_openai_metadata(skill_name, errors)
         if not display_name:
             continue
@@ -244,7 +269,7 @@ def main() -> None:
         f"{total_length} 个字符，最长为 {longest_name} "
         f"（{description_lengths[longest_name]} 个字符）；"
         f"{len(beta_paths)} 个 beta Skill 已标记为 internal；"
-        f"{len(display_names)} 个 DBS Skill 的 Codex 界面元数据符合命名规范，"
+        f"{len(display_names)} 个正式 Skill 的 Codex 界面元数据符合命名规范，"
         "短描述均具体且互不重复"
     )
 

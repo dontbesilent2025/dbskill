@@ -1,4 +1,4 @@
 interface:
-  display_name: "dbs-video-navigation"
+  display_name: "dbs-video-navigation（视频时间轴导航）"
   short_description: "按视频内容划分章节、话题或步骤，生成可导入剪辑软件的导航条和动态进度视频"
   default_prompt: "使用 $dbs-video-navigation 分析我的视频或字幕，沿用可用样式，生成完整章节导航视频及首尾字幕时间表。"

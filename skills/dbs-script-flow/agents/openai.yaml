@@ -1,4 +1,4 @@
 interface:
-  display_name: "dbs-script-flow"
+  display_name: "dbs-script-flow（文稿段落衔接）"
   short_description: "检查短视频逐字稿的段落衔接、信息密度与口播流畅度，标出划走风险"
   default_prompt: "使用 $dbs-script-flow，检查当前逐字稿的逻辑衔接与观众划走风险。"

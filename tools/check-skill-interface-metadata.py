@@ -79,6 +79,16 @@ def read_interface_scalar(text: str, field: str) -> str:
     return raw
 
 
+def valid_display_name(name: str, display_name: str) -> bool:
+    if display_name == name:
+        return True
+    return (
+        display_name.startswith(f"{name}（")
+        and display_name.endswith("）")
+        and bool(re.search(r"[\u3400-\u9fff]", display_name[len(name) + 1 : -1]))
+    )
+
+
 def discover_skills(argument: Path) -> tuple[Path, list[Path]]:
     path = argument.expanduser().resolve()
     if (path / "SKILL.md").is_file():
@@ -205,7 +215,7 @@ def fix_skill(skill: Skill) -> bool:
     display_name = read_interface_scalar(text, "display_name")
     short_description = read_interface_scalar(text, "short_description")
     default_prompt = read_interface_scalar(text, "default_prompt")
-    if display_name != skill.name:
+    if not valid_display_name(skill.name, display_name):
         text = replace_interface_scalar(text, "display_name", skill.name)
     if (
         not SHORT_DESCRIPTION_MIN <= len(short_description) <= SHORT_DESCRIPTION_MAX
@@ -237,9 +247,10 @@ def validate_skill(skill: Skill) -> list[str]:
     short_description = read_interface_scalar(text, "short_description")
     default_prompt = read_interface_scalar(text, "default_prompt")
     errors: list[str] = []
-    if display_name != skill.name:
+    if not valid_display_name(skill.name, display_name):
         errors.append(
-            f"{relative} 的 display_name 应为 {skill.name!r}，当前为 {display_name!r}"
+            f"{relative} 的 display_name 应为 {skill.name!r} 或“{skill.name}（中文名）”，"
+            f"当前为 {display_name!r}"
         )
     if not SHORT_DESCRIPTION_MIN <= len(short_description) <= SHORT_DESCRIPTION_MAX:
         errors.append(

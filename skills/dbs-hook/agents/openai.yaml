@@ -1,4 +1,4 @@
 interface:
-  display_name: "dbs-hook"
+  display_name: "dbs-hook（短视频开头优化（旧版））"
   short_description: "【deprecated】旧版兼容，诊断短视频前 5 秒的问题，优化抓手、可信度、信息密度与表达"
   default_prompt: "使用 $dbs-hook，诊断并优化当前短视频文稿的前 5 秒。"

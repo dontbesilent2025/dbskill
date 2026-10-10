@@ -1,4 +1,4 @@
 interface:
-  display_name: "dbs-chatroom-austrian"
+  display_name: "dbs-chatroom-austrian（奥派经济学聊天室）"
   short_description: "模拟哈耶克、米塞斯与 Claude 的奥派经济学对话，讨论问题并总结分歧"
   default_prompt: "使用 $dbs-chatroom-austrian，从奥派经济学视角讨论当前问题。"
