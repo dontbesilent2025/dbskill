@@ -4,7 +4,7 @@
 
 > 창업가와 콘텐츠 제작자를 위한 중국어 AI Skills 도구 상자입니다. 실제 비즈니스, 콘텐츠, 실행 문제를 Agent 에게 전달하면 명확한 판단과 바로 시작할 수 있는 다음 행동을 얻을 수 있습니다.
 
-[![Version](https://img.shields.io/badge/version-2.18.48-111111.svg)](VERSION)
+[![Version](https://img.shields.io/badge/version-2.18.49-111111.svg)](VERSION)
 [![Skills](https://img.shields.io/badge/Skills-37-111111.svg)](docs/新手入门.md#skill-全目录)
 [![License](https://img.shields.io/badge/license-CC%20BY--NC%204.0-111111.svg)](LICENSE)
 
@@ -16,7 +16,6 @@ dbskill 은 [dontbesilent](https://x.com/dontbesilent)가 만들었습니다. �
 
 [빠른 시작](#빠른-시작) · [설치](#설치) · [기능](#기능-목록) · [전체 가이드](docs/新手入门.md) · [변경 내역](https://github.com/dontbesilent2025/dbskill/commits/main)
 
-![dbskill 동적 구성 맵](docs/skill-link-map-4x3.svg)
 
 ## dbskill 이 해결하는 문제
 
@@ -146,7 +145,6 @@ claude plugin install dbs@dontbesilent-skills
 - 방법론은 [Skill 지식 팩](知识库/Skill知识包)에서 볼 수 있습니다.
 - 대화를 이어서 작업하려면 `/dbs-save`, `/dbs-restore`, `/dbs-report` 를 사용하세요. 데이터는 `~/.dbs/` 에 로컬로 저장됩니다.
 
-![dbskill 지식 파이프라인](docs/knowledge-pipeline.svg)
 
 ## 작성자와 지원
 

@@ -4,7 +4,7 @@
 
 > A Chinese AI Skills toolkit for entrepreneurs and content creators. Give your Agent a real business, content, or execution problem, and get a clear judgment plus the next action you can take.
 
-[![Version](https://img.shields.io/badge/version-2.18.48-111111.svg)](VERSION)
+[![Version](https://img.shields.io/badge/version-2.18.49-111111.svg)](VERSION)
 [![Skills](https://img.shields.io/badge/Skills-37-111111.svg)](docs/新手入门.md#skill-全目录)
 [![License](https://img.shields.io/badge/license-CC%20BY--NC%204.0-111111.svg)](LICENSE)
 
@@ -16,7 +16,6 @@ Created by [dontbesilent](https://x.com/dontbesilent), dbskill includes 4,176 kn
 
 [Quick start](#quick-start) · [Install](#install) · [Capabilities](#capabilities) · [Full guide](docs/新手入门.md) · [Changes](https://github.com/dontbesilent2025/dbskill/commits/main)
 
-![dbskill composition map](docs/skill-link-map-4x3.svg)
 
 ## What dbskill helps you solve
 
@@ -146,7 +145,6 @@ The repository includes 4,176 structured knowledge atoms, methodology documents 
 - Browse the [Skill knowledge packs](知识库/Skill知识包) for the methods.
 - Use `/dbs-save`, `/dbs-restore`, and `/dbs-report` for work across conversations. Data stays locally in `~/.dbs/`.
 
-![dbskill knowledge pipeline](docs/knowledge-pipeline.svg)
 
 ## Author and support
 

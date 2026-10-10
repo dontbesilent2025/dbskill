@@ -23,7 +23,7 @@ description: dontbesilent 商业工具箱主入口，提供新手教程、单任
 每次进入本 Skill，在判断模式和编排之前，必须先定位本 `SKILL.md` 所在目录，并执行该目录中的版本检查脚本：
 
 ```bash
-DBS_LOCAL_VERSION="2.18.48"; bash "<本 SKILL.md 所在目录>/scripts/check-update.sh" "$DBS_LOCAL_VERSION"
+DBS_LOCAL_VERSION="2.18.49"; bash "<本 SKILL.md 所在目录>/scripts/check-update.sh" "$DBS_LOCAL_VERSION"
 ```
 
 执行规则：
