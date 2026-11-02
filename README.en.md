@@ -2,11 +2,11 @@
 
 [简体中文](README.md) | English | [日本語](README.ja.md) | [한국어](README.ko.md) | [繁體中文](README.zh-TW.md)
 
-[![Version](https://img.shields.io/badge/version-3.1.0-111111.svg)](VERSION)
+[![Version](https://img.shields.io/badge/version-3.2.0-111111.svg)](VERSION)
 [![skills.sh](https://skills.sh/b/dontbesilent2025/dbskill)](https://skills.sh/b/dontbesilent2025/dbskill)
 [![License](https://img.shields.io/badge/license-CC%20BY--NC%204.0-111111.svg)](LICENSE)
 
-**This update:** When talking about pricing and business problems, 「诊断商业问题」, 「明确定义问题」 and 「分析对标」 now give examples from other businesses such as a cake shop, a bookkeeping firm or a local store, not only online courses. The methods and how you call them are unchanged.
+**This update:** You can now use dbskill in Grok Bot: send one message to your bot and it installs the 29 public Skills, ready for the "dbs 创业教练" and "dbs 内容教练" templates. Installation and use in other Agents are unchanged.
 
 ## What dbskill is
 
@@ -33,7 +33,7 @@ Run in a terminal:
 npx -y skills add dontbesilent2025/dbskill -g --all
 ```
 
-To use the Claude Code marketplace or install a single Skill, see [Installation details](#installation-details) below.
+To use the Claude Code marketplace or install a single Skill, see [Installation details](#installation-details) below. For Grok Bot, see [Grok Bot](#grok-bot).
 
 **Step 2: Give your question to `/dbs`**
 
@@ -170,6 +170,20 @@ claude plugin install dbs-diagnosis@dontbesilent-skills
 ```
 
 ![Claude Code installation demo](demo.gif)
+
+### Grok Bot
+
+This section is not run in a terminal. Send the whole block to your Grok Bot as a chat message.
+
+If you use the "dbs 创业教练" (startup coach) template, send:
+
+```text
+Please run these two commands in your environment to install dbskill, and show me the output as-is:
+git clone --depth 1 https://github.com/dontbesilent2025/dbskill /tmp/dbskill 2>/dev/null || git -C /tmp/dbskill pull --ff-only
+python3 /tmp/dbskill/tools/grok/install.py --coach startup
+```
+
+If you use the "dbs 内容教练" (content coach) template, replace the final `startup` with `content`; to install all 29 public Skills, use `all`. Then ask your Bot "use dbs to look at ...". To update later, send the same message again.
 
 ### Commands not showing after installation
 

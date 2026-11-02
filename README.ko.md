@@ -2,11 +2,11 @@
 
 [简体中文](README.md) | [English](README.en.md) | [日本語](README.ja.md) | 한국어 | [繁體中文](README.zh-TW.md)
 
-[![Version](https://img.shields.io/badge/version-3.1.0-111111.svg)](VERSION)
+[![Version](https://img.shields.io/badge/version-3.2.0-111111.svg)](VERSION)
 [![skills.sh](https://skills.sh/b/dontbesilent2025/dbskill)](https://skills.sh/b/dontbesilent2025/dbskill)
 [![License](https://img.shields.io/badge/license-CC%20BY--NC%204.0-111111.svg)](LICENSE)
 
-**이번 업데이트:** 「诊断商业问题」「明确定义问题」「分析对标」 세 Skill 이 가격과 사업 문제를 다룰 때 강의 판매뿐 아니라 케이크 가게, 기장 대행, 매장 같은 업종 예시도 듭니다. 방법과 호출 방법은 그대로입니다.
+**이번 업데이트:** Grok Bot에서 dbskill을 쓰는 방법을 추가했습니다. Bot에 메시지 하나를 보내면 공개 Skill 29개가 설치되고, 「dbs 创业教练」「dbs 内容教练」 템플릿과 바로 쓸 수 있습니다. 다른 Agent의 설치와 사용법은 그대로입니다.
 
 ## dbskill 이란
 
@@ -33,7 +33,7 @@ Skill 은 Agent 에게 주는 작업 방법입니다. dbskill 을 설치하면 A
 npx -y skills add dontbesilent2025/dbskill -g --all
 ```
 
-Claude Code 플러그인 마켓플레이스를 쓰거나 Skill 하나만 설치하려면 아래 [설치 세부 정보](#설치-세부-정보)를 확인하세요.
+Claude Code 플러그인 마켓플레이스를 쓰거나 Skill 하나만 설치하려면 아래 [설치 세부 정보](#설치-세부-정보)를 확인하세요. Grok Bot에서 쓰려면 [Grok Bot](#grok-bot)을 확인하세요.
 
 **2 단계: 문제를 `/dbs` 에 전달**
 
@@ -170,6 +170,20 @@ claude plugin install dbs-diagnosis@dontbesilent-skills
 ```
 
 ![Claude Code 설치 데모](demo.gif)
+
+### Grok Bot
+
+이 절의 내용은 터미널에서 실행하지 않고, 전체를 채팅 메시지로 Grok Bot에 보냅니다.
+
+「dbs 创业教练」 템플릿을 쓰는 경우 다음을 보내세요.
+
+```text
+아래 두 명령을 실행해 dbskill을 설치하고, 출력을 그대로 보여 주세요:
+git clone --depth 1 https://github.com/dontbesilent2025/dbskill /tmp/dbskill 2>/dev/null || git -C /tmp/dbskill pull --ff-only
+python3 /tmp/dbskill/tools/grok/install.py --coach startup
+```
+
+「dbs 内容教练」 템플릿이면 마지막 `startup`을 `content`로, 공개 Skill 29개를 모두 설치하려면 `all`로 바꿉니다. 설치 후 Bot에게 "dbs로 ……를 봐 줘"라고 요청하세요. 업데이트할 때도 같은 메시지를 다시 보냅니다.
 
 ### 설치 후 명령이 보이지 않을 때
 

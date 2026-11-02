@@ -1,5 +1,5 @@
 {
-  "version": "3.1.0",
-  "notice": "「写标题封面与开头」写图文封面时每行最多 6 个字、极限 7 个字，8 个字及以上一律重写，封面放到抖音上字也不会变小。",
+  "version": "3.2.0",
+  "notice": "Grok Bot 用户把一段话发给 bot，就能装好 29 个公开技能，配合「dbs 创业教练」「dbs 内容教练」模板直接用",
   "details_url": "https://github.com/dontbesilent2025/dbskill/commits/main"
 }

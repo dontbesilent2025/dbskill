@@ -2,11 +2,11 @@
 
 简体中文 | [English](README.en.md) | [日本語](README.ja.md) | [한국어](README.ko.md) | [繁體中文](README.zh-TW.md)
 
-[![Version](https://img.shields.io/badge/version-3.1.0-2563EB.svg?style=flat-square)](VERSION)
+[![Version](https://img.shields.io/badge/version-3.2.0-2563EB.svg?style=flat-square)](VERSION)
 [![skills.sh](https://skills.sh/b/dontbesilent2025/dbskill)](https://skills.sh/b/dontbesilent2025/dbskill)
 [![License](https://img.shields.io/badge/license-CC%20BY--NC%204.0-16A34A.svg?style=flat-square)](LICENSE)
 
-**本次更新：** 「诊断商业问题」「明确定义问题」「分析对标」三个技能讲定价和商业问题时，在卖课之外也举蛋糕、代账、门店等行业的例子；方法和调用方式不变
+**本次更新：** 新增在 Grok Bot 里使用 dbskill 的方法：把一段话发给 bot，就能装好 29 个公开技能，配合「dbs 创业教练」「dbs 内容教练」模板直接用；其他 Agent 的安装和用法不变
 
 ## dbskill 是什么
 
@@ -33,7 +33,7 @@ Skill 是一套写给 Agent 的做事方法。装好 dbskill 后，你可以让 
 npx -y skills add dontbesilent2025/dbskill -g --all
 ```
 
-使用 Claude Code 插件市场或只装单个 Skill，见下文[安装详情](#安装详情)
+使用 Claude Code 插件市场或只装单个 Skill，见下文[安装详情](#安装详情)。在 Grok Bot 里使用，见 [Grok Bot](#grok-bot)
 
 **第 2 步：把问题交给 `/dbs`**
 
@@ -170,6 +170,20 @@ claude plugin install dbs-diagnosis@dontbesilent-skills
 ```
 
 ![Claude Code 插件安装演示](demo.gif)
+
+### Grok Bot
+
+这一节的内容不在终端运行，而是整段作为聊天内容发给你的 Grok Bot。
+
+用「dbs 创业教练」模板的，发：
+
+```text
+请在你的运行环境里执行下面两条命令安装 dbskill，把输出原样告诉我：
+git clone --depth 1 https://github.com/dontbesilent2025/dbskill /tmp/dbskill 2>/dev/null || git -C /tmp/dbskill pull --ff-only
+python3 /tmp/dbskill/tools/grok/install.py --coach startup
+```
+
+用「dbs 内容教练」模板的，把最后的 `startup` 换成 `content`；想装全部 29 个公开 Skill，换成 `all`。装好后对 Bot 说「用 dbs 帮我看看……」即可。之后想更新，再发一次同样的话
 
 ### 装好后没看到命令
 
