@@ -2,11 +2,11 @@
 
 [简体中文](README.md) | English | [日本語](README.ja.md) | [한국어](README.ko.md) | [繁體中文](README.zh-TW.md)
 
-[![Version](https://img.shields.io/badge/version-3.2.1-111111.svg)](VERSION)
+[![Version](https://img.shields.io/badge/version-3.2.2-111111.svg)](VERSION)
 [![skills.sh](https://skills.sh/b/dontbesilent2025/dbskill)](https://skills.sh/b/dontbesilent2025/dbskill)
-[![License](https://img.shields.io/badge/license-CC%20BY--NC%204.0-111111.svg)](LICENSE)
+[![License](https://img.shields.io/badge/license-All%20Rights%20Reserved-111111.svg)](LICENSE)
 
-**This update:** The README now gives the add links for the two Grok Bot coaches, "dbs 创业教练" (startup coach) and "dbs 内容教练" (content coach), with three steps to start. Installation and use in other Agents are unchanged.
+**This update:** The repository is now all rights reserved. You can still install and use the Skills for free, including in your own business and for your clients; without permission you may not repost, bundle, sell, or use them for AI training. See [LICENSE](LICENSE) for the full terms
 
 ## What dbskill is
 
@@ -276,4 +276,11 @@ The sensitive-word checking in `dbs-content-risk-check` was improved together by
 
 ## License
 
-This project is licensed under [CC BY-NC 4.0](LICENSE). For personal study, research, and non-commercial use, please credit the source. For commercial use, contact the author for authorization.
+Copyright © dontbesilent. All rights reserved. See [LICENSE](LICENSE) for the full terms (the Chinese version prevails).
+
+- You may install and use the Skills for free, including in your own business and when serving your own clients, and you may modify them on your own devices for your own use.
+- Without written permission, you may not repost, redistribute, bundle into other products, sell, or publicly release modified versions, or use the content to train AI models. Sharing links to this repository is fine.
+- The `books/` directory is for free reading only. See [books/LICENSE](books/LICENSE).
+- Versions released before 2026-11-02 remain under CC BY-NC 4.0 as granted at the time.
+
+To request permission, leave a message on the WeChat Official Account "dontbesilent" or email openmarshall@gmail.com.

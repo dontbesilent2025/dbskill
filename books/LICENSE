@@ -1,0 +1,107 @@
+# dbskill books 阅读条款
+
+版权所有 © 2026 dontbesilent。保留所有权利。
+
+生效日期：2026-11-02
+
+## 中文
+
+### 1. 适用范围
+
+1.1 本条款适用于 `books/` 目录下的全部内容，包括其中的全部书籍及各种格式的文件，也包括今后加入该目录的书籍。以下统称「本书」。
+
+1.2 仓库根目录 `LICENSE` 中对 Skill 等软件部分的使用许可不适用于本书。
+
+### 2. 版权与阅读许可
+
+2.1 本书版权归 dontbesilent 所有，保留一切权利。
+
+2.2 你可以免费阅读本书，包括在线阅读，以及下载到自己的设备上阅读。
+
+2.3 除此以外，未经作者书面许可，任何人不得以任何形式转载、复制、传播、改编、翻译、摘编本书内容，也不得将本书用于任何商业用途。
+
+2.4 任何人不得使用本书内容训练或微调人工智能模型。
+
+### 3. GitHub 平台上的浏览与 fork
+
+3.1 GitHub 用户协议允许的浏览和 fork 不受本条款影响。
+
+3.2 你不会因浏览或 fork 获得第 2.2 条以外的任何权利。fork 后的副本仍受本条款约束。
+
+### 4. 其他贡献者提交的内容
+
+4.1 `books/` 目录中由 dontbesilent 以外的贡献者提交、且该贡献者尚未同意改用本条款的文件，继续按其提交时适用的许可（CC BY-NC 4.0）使用。
+
+4.2 适用第 4.1 条的文件：Livoras Dai 提交的推文集 EPUB 文件。该贡献者同意改用本条款后，此文件从本清单中移除。
+
+### 5. 生效与过渡
+
+5.1 本条款自生效日起，适用于生效日之后发布的版本。
+
+5.2 生效日之前按 CC BY-NC 4.0 发布的版本，其已经授予的权利依 CC BY-NC 4.0 继续有效。
+
+### 6. 适用法律
+
+6.1 本条款适用中华人民共和国法律。
+
+### 7. 联系方式
+
+7.1 申请书面许可或咨询本条款，请在微信公众号「dontbesilent」后台留言，或发送邮件至 openmarshall@gmail.com。
+
+### 8. 语言版本
+
+8.1 本条款以中文版本为准。英文译本与中文版本不一致时，以中文版本为准。
+
+---
+
+## English (Translation)
+
+Copyright © 2026 dontbesilent. All rights reserved.
+
+Effective Date: 2026-11-02
+
+### 1. Scope
+
+1.1 These terms apply to all content in the `books/` directory, including all books and files in any format in it, as well as books added to that directory in the future. All of the above are referred to as "the Book".
+
+1.2 The use license for the software portions, such as Skills, in the `LICENSE` file at the repository root does not apply to the Book.
+
+### 2. Copyright and Reading Permission
+
+2.1 The copyright of the Book belongs to dontbesilent. All rights reserved.
+
+2.2 You may read the Book free of charge, including reading it online and downloading it to your own device to read.
+
+2.3 Other than that, without the author's written permission, no one may repost, copy, distribute, adapt, translate or excerpt the content of the Book in any form, or use the Book for any commercial purpose.
+
+2.4 No one may use the content of the Book to train or fine-tune artificial intelligence models.
+
+### 3. Viewing and Forking on GitHub
+
+3.1 Viewing and forking permitted by the GitHub Terms of Service are not affected by these terms.
+
+3.2 Viewing or forking does not give you any rights beyond those in Section 2.2. A forked copy remains subject to these terms.
+
+### 4. Content Submitted by Other Contributors
+
+4.1 Files in the `books/` directory submitted by contributors other than dontbesilent, where that contributor has not agreed to relicense them under these terms, continue to be used under the license that applied when they were submitted (CC BY-NC 4.0).
+
+4.2 Files covered by Section 4.1: the tweet collection EPUB file submitted by Livoras Dai. Once that contributor agrees to these terms, the file is removed from this list.
+
+### 5. Effect and Transition
+
+5.1 These terms apply, from the Effective Date, to versions released after the Effective Date.
+
+5.2 For versions released under CC BY-NC 4.0 before the Effective Date, the rights already granted under CC BY-NC 4.0 remain in effect according to CC BY-NC 4.0.
+
+### 6. Governing Law
+
+6.1 These terms are governed by the laws of the People's Republic of China.
+
+### 7. Contact
+
+7.1 To request written permission or ask about these terms, leave a message on the WeChat Official Account "dontbesilent" or email openmarshall@gmail.com.
+
+### 8. Language
+
+8.1 The Chinese version of these terms prevails. If this English translation differs from the Chinese version, the Chinese version prevails.

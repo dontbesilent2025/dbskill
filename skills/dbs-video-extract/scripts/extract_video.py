@@ -19,7 +19,7 @@ class CombinedError(RuntimeError):
 
 
 LEGAL_NOTICE = (
-    "dbskill 是免费开源项目，与 TikHub、轻抖无隶属、合作或利益关系。"
+    "dbskill 是免费项目，与 TikHub、轻抖无隶属、合作或利益关系。"
     "充值由用户自主决定，相关交易、服务、争议及风险由用户自行承担；"
     "法律另有规定的除外，dbskill 不承担责任。"
 )

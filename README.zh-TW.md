@@ -2,11 +2,11 @@
 
 [简体中文](README.md) | [English](README.en.md) | [日本語](README.ja.md) | [한국어](README.ko.md) | 繁體中文
 
-[![Version](https://img.shields.io/badge/version-3.2.1-111111.svg)](VERSION)
+[![Version](https://img.shields.io/badge/version-3.2.2-111111.svg)](VERSION)
 [![skills.sh](https://skills.sh/b/dontbesilent2025/dbskill)](https://skills.sh/b/dontbesilent2025/dbskill)
-[![License](https://img.shields.io/badge/license-CC%20BY--NC%204.0-111111.svg)](LICENSE)
+[![License](https://img.shields.io/badge/license-All%20Rights%20Reserved-111111.svg)](LICENSE)
 
-**本次更新：** README 直接給出「dbs 创业教练」「dbs 内容教练」兩個 Grok Bot 教練的加入連結和三步用法，打開連結加入就能用；其他 Agent 的安裝和用法不變
+**本次更新：** 倉庫改為保留所有權利。Skill 仍可免費安裝和使用，也能用於自己的生意和客戶服務；未經許可不得轉載、打包、出售或用於 AI 訓練。完整條款見 [LICENSE](LICENSE)
 
 ## dbskill 是什麼
 
@@ -246,8 +246,8 @@ claude plugin install dbs-diagnosis@dontbesilent-skills
 
 | 資料 | 用途 |
 | --- | --- |
-| [公開貼文集（Markdown）](books/dontbesilent-开源推文集.md) | 搜尋、閱讀，或交給 AI 分析 |
-| [公開貼文集（PDF）](books/dontbesilent-开源推文集.pdf) | 閱讀和保存 |
+| [dontbesilent 推文集（Markdown）](books/dontbesilent-开源推文集.md) | 搜尋、閱讀，或交給 AI 分析 |
+| [dontbesilent 推文集（PDF）](books/dontbesilent-开源推文集.pdf) | 閱讀和保存 |
 | [原子庫說明](知识库/原子库/README.md) | 資料範圍、欄位和使用方式 |
 | [知識原子資料](知识库/原子库/atoms.jsonl) | 自建檢索、分析或 RAG |
 | [Skill 知識包](知识库/Skill知识包) | 依 Skill 整理的方法資料 |
@@ -276,4 +276,11 @@ claude plugin install dbs-diagnosis@dontbesilent-skills
 
 ## 授權條款
 
-本專案採用 [CC BY-NC 4.0](LICENSE) 授權條款。個人學習、研究和非商業使用請註明來源；商業用途請聯絡作者取得授權。
+本專案版權歸 dontbesilent 所有，保留所有權利，完整條款見 [LICENSE](LICENSE)（以簡體中文版本為準）。
+
+- 你可以免費安裝和使用 Skill，包括用它經營自己的生意、為自己的客戶提供服務，也可以在自己的裝置上修改後自用。
+- 未經書面許可，不得轉載、再散布、打包進其他產品、出售或公開發布修改版，也不得用於訓練 AI 模型。分享本倉庫連結不受限制。
+- `books/` 目錄僅供免費閱讀，見 [books/LICENSE](books/LICENSE)。
+- 2026-11-02 之前發布的版本，仍依當時的 CC BY-NC 4.0 授權。
+
+申請授權請在微信公眾號「dontbesilent」後台留言，或寄信至 openmarshall@gmail.com。

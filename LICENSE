@@ -1,19 +1,187 @@
-Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)
+# dbskill 版权与使用条款
 
-https://creativecommons.org/licenses/by-nc/4.0/
+版权所有 © 2026 dontbesilent。保留所有权利。
 
-You are free to:
-- Share — copy and redistribute the material in any medium or format
-- Adapt — remix, transform, and build upon the material
+生效日期：2026-11-02
 
-Under the following terms:
-- Attribution — You must give appropriate credit, provide a link to the license,
-  and indicate if changes were made.
-- NonCommercial — You may not use the material for commercial purposes.
+## 中文
 
-No additional restrictions — You may not apply legal terms or technological
-measures that legally restrict others from doing anything the license permits.
+### 1. 版权归属
 
-Copyright (c) 2026 dontbesilent
-https://x.com/dontbesilent
-https://github.com/dontbesilent2025/dbskill
+1.1 本仓库（dbskill）中的全部内容，包括 Skill、提示词、脚本、知识库、文档、图片和书籍，版权归 dontbesilent 所有，保留所有权利，本条款第 6 条所列内容除外。
+
+1.2 除本条款明确授予的权利外，作者不授予任何其他权利。
+
+### 2. 适用范围
+
+2.1 第 3 条的使用许可适用于本仓库中的 Skill 等软件部分和知识库，包括 `skills/` 目录、`知识库/` 目录，以及其他与安装、运行 Skill 相关的文件。
+
+2.2 `books/` 目录下的全部内容不适用第 3 条的使用许可，单独适用 `books/LICENSE`（books 阅读条款）。
+
+### 3. 有限使用许可
+
+在遵守本条款的前提下，作者授予你以下非独占、不可转让、不可再许可的权利：
+
+3.1 阅读本仓库中的 Skill 等软件部分和知识库。
+
+3.2 安装 Skill，包括通过 `npx skills add` 等方式把 Skill 复制到你自己的设备上。
+
+3.3 在个人事务或你自己的业务中使用 Skill，包括使用 Skill 产出的内容获得收入。
+
+3.4 在为你自己的客户提供服务时使用 Skill，例如代写、代运营或咨询。你可以把 Skill 产出的内容交付给客户，但不得把 Skill 文件本身提供给客户。
+
+3.5 在你自己的设备上修改 Skill，修改后的版本仅供你自己使用。
+
+3.6 在你自己的设备或业务中，对 `知识库/` 中的内容进行检索、分析，或用于检索增强生成（RAG）。
+
+### 4. 禁止事项
+
+未经作者书面许可，任何人不得：
+
+4.1 转载或再分发本仓库内容，包括发布到其他代码仓库、网盘、平台或社群。
+
+4.2 把本仓库内容打包进其他 Skill 合集、产品或课程，或作为赠品提供。
+
+4.3 出售本仓库内容，或以收费方式向他人提供本仓库内容本身。
+
+4.4 公开发布本仓库内容的修改版。
+
+4.5 去除或修改本仓库内容中的署名和版权声明。
+
+4.6 使用本仓库内容训练或微调人工智能模型。
+
+分享本仓库的链接不受本条限制。
+
+### 5. GitHub 平台上的浏览与 fork
+
+5.1 GitHub 用户协议允许的浏览和 fork 不受本条款影响。
+
+5.2 你不会因浏览或 fork 获得第 3 条以外的任何权利。fork 后的副本仍受本条款约束。
+
+### 6. 其他贡献者提交的内容
+
+6.1 由 dontbesilent 以外的贡献者提交、且该贡献者尚未同意改用本条款的内容，继续按其提交时适用的许可（CC BY-NC 4.0）使用。
+
+6.2 适用第 6.1 条的文件：
+
+- daymade 提交：`.claude-plugin/marketplace.json`、`demo.gif`、`scripts/demo.tape`、`scripts/record-demo.sh`。
+- Livoras Dai 提交：`books/` 目录下的推文集 EPUB 文件。
+- 共创者 Ronnie2025、非著名投放小沈：参与完善的 `skills/dbs-content-risk-check/` 敏感词检查内容。
+
+贡献者同意改用本条款后，相应文件从本清单中移除。
+
+### 7. 许可终止
+
+7.1 你违反本条款的，第 3 条授予你的权利自动终止。
+
+### 8. 生效与过渡
+
+8.1 本条款自生效日起，适用于生效日之后发布的版本。
+
+8.2 生效日之前按 CC BY-NC 4.0 发布的版本，其已经授予的权利依 CC BY-NC 4.0 继续有效。
+
+### 9. 适用法律
+
+9.1 本条款适用中华人民共和国法律。
+
+### 10. 联系方式
+
+10.1 申请书面许可或咨询本条款，请在微信公众号「dontbesilent」后台留言，或发送邮件至 openmarshall@gmail.com。
+
+### 11. 语言版本
+
+11.1 本条款以中文版本为准。英文译本与中文版本不一致时，以中文版本为准。
+
+---
+
+## English (Translation)
+
+Copyright © 2026 dontbesilent. All rights reserved.
+
+Effective Date: 2026-11-02
+
+### 1. Ownership
+
+1.1 All content in this repository (dbskill), including Skills, prompts, scripts, the knowledge base, documents, images and books, is copyrighted by dontbesilent, with all rights reserved, except for the content listed in Section 6.
+
+1.2 No rights are granted except those expressly granted in these terms.
+
+### 2. Scope
+
+2.1 The license in Section 3 applies to the Skills and other software parts of this repository and to the knowledge base, including the `skills/` directory, the `知识库/` directory, and other files related to installing and running Skills.
+
+2.2 The license in Section 3 does not apply to anything in the `books/` directory, which is governed separately by `books/LICENSE` (the books reading terms).
+
+### 3. Limited License
+
+Subject to these terms, the author grants you the following non-exclusive, non-transferable, non-sublicensable rights:
+
+3.1 To read the Skills and other software parts of this repository and the knowledge base.
+
+3.2 To install Skills, including copying Skills to your own devices via `npx skills add` or similar methods.
+
+3.3 To use Skills for personal matters or in your own business, including earning income from content produced with the Skills.
+
+3.4 To use Skills when providing services to your own clients, such as writing, account operation or consulting. You may deliver content produced with the Skills to clients, but you may not provide the Skill files themselves to clients.
+
+3.5 To modify Skills on your own devices, with modified versions for your own use only.
+
+3.6 To search, analyze, or use for retrieval-augmented generation (RAG) the content of the `知识库/` directory, on your own devices or in your own business.
+
+### 4. Prohibited Uses
+
+Without the author's written permission, no one may:
+
+4.1 Repost or redistribute the content of this repository, including publishing it to other code repositories, cloud drives, platforms or communities.
+
+4.2 Bundle the content of this repository into other Skill collections, products or courses, or provide it as a giveaway.
+
+4.3 Sell the content of this repository, or provide the content itself to others for a fee.
+
+4.4 Publicly release modified versions of the content of this repository.
+
+4.5 Remove or alter attribution and copyright notices in the content of this repository.
+
+4.6 Use the content of this repository to train or fine-tune artificial intelligence models.
+
+Sharing links to this repository is not restricted by this section.
+
+### 5. Viewing and Forking on GitHub
+
+5.1 Viewing and forking permitted by the GitHub Terms of Service are not affected by these terms.
+
+5.2 Viewing or forking does not give you any rights beyond those in Section 3. Forked copies remain subject to these terms.
+
+### 6. Content Submitted by Other Contributors
+
+6.1 Content submitted by contributors other than dontbesilent, where the contributor has not agreed to these terms, continues to be used under the license that applied when it was submitted (CC BY-NC 4.0).
+
+6.2 Files covered by Section 6.1:
+
+- Submitted by daymade: `.claude-plugin/marketplace.json`, `demo.gif`, `scripts/demo.tape`, `scripts/record-demo.sh`.
+- Submitted by Livoras Dai: the tweet collection EPUB file in the `books/` directory.
+- Co-creators Ronnie2025 and 非著名投放小沈: the sensitive-word checking content they helped improve in `skills/dbs-content-risk-check/`.
+
+Once a contributor agrees to these terms, the corresponding files are removed from this list.
+
+### 7. Termination
+
+7.1 If you violate these terms, the rights granted to you in Section 3 terminate automatically.
+
+### 8. Effective Date and Transition
+
+8.1 These terms apply, from the Effective Date, to versions released after the Effective Date.
+
+8.2 For versions released under CC BY-NC 4.0 before the Effective Date, the rights already granted continue under CC BY-NC 4.0.
+
+### 9. Governing Law
+
+9.1 These terms are governed by the laws of the People's Republic of China.
+
+### 10. Contact
+
+10.1 To request written permission or ask about these terms, leave a message on the WeChat Official Account "dontbesilent" or email openmarshall@gmail.com.
+
+### 11. Language
+
+11.1 The Chinese version of these terms prevails. If the English translation differs from the Chinese version, the Chinese version prevails.

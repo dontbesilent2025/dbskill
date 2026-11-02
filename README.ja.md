@@ -2,11 +2,11 @@
 
 [简体中文](README.md) | [English](README.en.md) | 日本語 | [한국어](README.ko.md) | [繁體中文](README.zh-TW.md)
 
-[![Version](https://img.shields.io/badge/version-3.2.1-111111.svg)](VERSION)
+[![Version](https://img.shields.io/badge/version-3.2.2-111111.svg)](VERSION)
 [![skills.sh](https://skills.sh/b/dontbesilent2025/dbskill)](https://skills.sh/b/dontbesilent2025/dbskill)
-[![License](https://img.shields.io/badge/license-CC%20BY--NC%204.0-111111.svg)](LICENSE)
+[![License](https://img.shields.io/badge/license-All%20Rights%20Reserved-111111.svg)](LICENSE)
 
-**今回の更新：** Grok Bot 用の 2 つのコーチ「dbs 创业教练」「dbs 内容教练」の追加リンクと、3 ステップの使い方を README に載せました。ほかの Agent でのインストールと使い方は変わりません。
+**今回の更新：** リポジトリをすべての権利留保に変更しました。Skill は引き続き無料でインストール・利用でき、自分のビジネスや顧客へのサービスにも使えます。許可なく転載、同梱、販売、AI 学習への利用はできません。全文は [LICENSE](LICENSE) を参照してください
 
 ## dbskill とは
 
@@ -276,4 +276,11 @@ Agent との会話で次のように伝えます。
 
 ## ライセンス
 
-本プロジェクトは [CC BY-NC 4.0](LICENSE) ライセンスを採用しています。個人の学習、研究、非商用での利用には出典を明記してください。商用利用には作者に連絡して許可を得てください。
+本プロジェクトの著作権は dontbesilent に帰属し、すべての権利を留保します。全文は [LICENSE](LICENSE) を参照してください（中国語版が優先されます）。
+
+- Skill は無料でインストール・利用できます。自分のビジネスや自分の顧客へのサービスでの利用、自分の端末上で自分用に改変することも含みます。
+- 書面による許可なく、転載、再配布、他の製品への同梱、販売、改変版の公開、AI モデルの学習への利用はできません。本リポジトリへのリンクの共有は自由です。
+- `books/` ディレクトリは無料での閲読のみ可能です。[books/LICENSE](books/LICENSE) を参照してください。
+- 2026-11-02 より前に公開された版は、当時の CC BY-NC 4.0 のままです。
+
+許可の申請は WeChat 公式アカウント「dontbesilent」へのメッセージ、または openmarshall@gmail.com まで。

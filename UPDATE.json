@@ -1,5 +1,5 @@
 {
-  "version": "3.2.1",
-  "notice": "README 直接给出「dbs 创业教练」「dbs 内容教练」两个 Grok Bot 教练的添加链接和三步用法，打开链接添加就能用",
+  "version": "3.2.2",
+  "notice": "仓库改为保留所有权利：Skill 仍可免费安装使用，也能用于自己的生意和客户服务，但禁止转载、打包、出售和用于 AI 训练",
   "details_url": "https://github.com/dontbesilent2025/dbskill/commits/main"
 }
