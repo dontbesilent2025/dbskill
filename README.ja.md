@@ -2,11 +2,11 @@
 
 [简体中文](README.md) | [English](README.en.md) | 日本語 | [한국어](README.ko.md) | [繁體中文](README.zh-TW.md)
 
-[![Version](https://img.shields.io/badge/version-3.2.0-111111.svg)](VERSION)
+[![Version](https://img.shields.io/badge/version-3.2.1-111111.svg)](VERSION)
 [![skills.sh](https://skills.sh/b/dontbesilent2025/dbskill)](https://skills.sh/b/dontbesilent2025/dbskill)
 [![License](https://img.shields.io/badge/license-CC%20BY--NC%204.0-111111.svg)](LICENSE)
 
-**今回の更新：** Grok Bot で dbskill を使う方法を追加しました。Bot にメッセージを 1 つ送るだけで公開 Skill 29 個が入り、「dbs 创业教练」「dbs 内容教练」テンプレートですぐ使えます。ほかの Agent でのインストールと使い方は変わりません。
+**今回の更新：** Grok Bot 用の 2 つのコーチ「dbs 创业教练」「dbs 内容教练」の追加リンクと、3 ステップの使い方を README に載せました。ほかの Agent でのインストールと使い方は変わりません。
 
 ## dbskill とは
 
@@ -33,7 +33,9 @@ Skill は、Agent に渡す作業の進め方です。dbskill をインストー
 npx -y skills add dontbesilent2025/dbskill -g --all
 ```
 
-Claude Code のプラグインマーケットプレイスを使う方法や、Skill を 1 つだけインストールする方法は、[インストールの詳細](#インストールの詳細)を参照してください。Grok Bot で使う場合は [Grok Bot](#grok-bot) を参照してください。
+Claude Code のプラグインマーケットプレイスを使う方法や、Skill を 1 つだけインストールする方法は、[インストールの詳細](#インストールの詳細)を参照してください。
+
+Grok Bot では、用意済みの [dbs 创业教练（起業コーチ）](https://x.ai/bot/kpZtlm5CADHoXaaAqTV5Z) か [dbs 内容教练（コンテンツコーチ）](https://x.ai/bot/qonh7lyBBYsbUXsR9LtO2) を追加するだけです。使い方は [Grok Bot で使う](#grok-bot-で使う) を参照してください。
 
 **ステップ 2：問題を `/dbs` に渡す**
 
@@ -48,6 +50,33 @@ Agent の入力欄に `/dbs` と入力し、続けて状況と問題を書きま
 **ステップ 3：同じ会話で続ける**
 
 結果を受け取ったら、事実、資料、修正の希望をそのまま追加してください。コマンドを入力し直す必要はありません。別の目標に移るときは、もう一度 `/dbs` と入力します。
+
+## Grok Bot で使う
+
+Grok Bot ではコマンドを打つ必要はありません。用意済みのコーチを追加すると、最初の会話で dbskill を自分でインストールします。コーチは中国語で話します。
+
+| コーチ | 手伝えること | 追加リンク |
+| --- | --- | --- |
+| dbs 创业教练（起業コーチ） | ビジネスがどこで詰まっているか、今週まず何をするかを決める。希望すれば毎週月曜に振り返りに来る | https://x.ai/bot/kpZtlm5CADHoXaaAqTV5Z |
+| dbs 内容教练（コンテンツコーチ） | テーマ選び、タイトル・カバー文字・冒頭の作成、原稿チェック、投稿ごとの振り返り。希望すれば毎週金曜に振り返りに来る | https://x.ai/bot/qonh7lyBBYsbUXsR9LtO2 |
+
+**使い方**
+
+1. 上のリンクを開いて「Add to Grok Bot」を押し、Grok Bot アプリで追加を確認します
+2. 追加したコーチに「こんにちは」と送ります。数分かけて dbskill をインストールし、ビジネスやアカウントについていくつか質問します
+3. あとは質問をそのまま送ります。例：「講座の継続率が低い。まずどこを見ればいい？」
+
+**コーチがインストールできないと言ったとき**
+
+次のブロックをそのまま送ってください。コンテンツコーチの場合は、最後の `startup` を `content` に置き換えます。
+
+```text
+次の 2 つのコマンドを実行して dbskill をインストールし、出力をそのまま見せてください：
+git clone --depth 1 https://github.com/dontbesilent2025/dbskill /tmp/dbskill 2>/dev/null || git -C /tmp/dbskill pull --ff-only
+python3 /tmp/dbskill/tools/grok/install.py --coach startup
+```
+
+コーチを使わず自分の Grok Bot に dbskill だけ入れたい場合も、同じブロックの `startup` を `all` にして送ると、公開 Skill 29 個がすべて入ります。
 
 ## /dbs が Skill を組み合わせる方法
 
@@ -170,20 +199,6 @@ claude plugin install dbs-diagnosis@dontbesilent-skills
 ```
 
 ![Claude Code のインストールデモ](demo.gif)
-
-### Grok Bot
-
-この節の内容はターミナルで実行せず、まとめてチャットで Grok Bot に送ってください。
-
-「dbs 创业教练」テンプレートを使っている場合は、次を送ります。
-
-```text
-次の 2 つのコマンドを実行して dbskill をインストールし、出力をそのまま見せてください：
-git clone --depth 1 https://github.com/dontbesilent2025/dbskill /tmp/dbskill 2>/dev/null || git -C /tmp/dbskill pull --ff-only
-python3 /tmp/dbskill/tools/grok/install.py --coach startup
-```
-
-「dbs 内容教练」テンプレートの場合は、最後の `startup` を `content` に、公開 Skill 29 個をすべて入れる場合は `all` に置き換えます。インストール後は「dbs で……を見て」と Bot に頼んでください。更新するときも同じメッセージを送ります。
 
 ### インストール後にコマンドが表示されない場合
 

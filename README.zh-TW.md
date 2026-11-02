@@ -2,11 +2,11 @@
 
 [简体中文](README.md) | [English](README.en.md) | [日本語](README.ja.md) | [한국어](README.ko.md) | 繁體中文
 
-[![Version](https://img.shields.io/badge/version-3.2.0-111111.svg)](VERSION)
+[![Version](https://img.shields.io/badge/version-3.2.1-111111.svg)](VERSION)
 [![skills.sh](https://skills.sh/b/dontbesilent2025/dbskill)](https://skills.sh/b/dontbesilent2025/dbskill)
 [![License](https://img.shields.io/badge/license-CC%20BY--NC%204.0-111111.svg)](LICENSE)
 
-**本次更新：** 新增在 Grok Bot 裡使用 dbskill 的方法：把一段話發給 bot，就能裝好 29 個公開技能，配合「dbs 创业教练」「dbs 内容教练」範本直接用；其他 Agent 的安裝和用法不變
+**本次更新：** README 直接給出「dbs 创业教练」「dbs 内容教练」兩個 Grok Bot 教練的加入連結和三步用法，打開連結加入就能用；其他 Agent 的安裝和用法不變
 
 ## dbskill 是什麼
 
@@ -33,7 +33,9 @@ Skill 是一套寫給 Agent 的做事方法。裝好 dbskill 後，你可以讓 
 npx -y skills add dontbesilent2025/dbskill -g --all
 ```
 
-使用 Claude Code 外掛市集或只安裝單一 Skill，見下文[安裝詳情](#安裝詳情)。在 Grok Bot 裡使用，見 [Grok Bot](#grok-bot)。
+使用 Claude Code 外掛市集或只安裝單一 Skill，見下文[安裝詳情](#安裝詳情)
+
+在 Grok Bot 裡使用：直接加入現成的 [dbs 创业教练](https://x.ai/bot/kpZtlm5CADHoXaaAqTV5Z) 或 [dbs 内容教练](https://x.ai/bot/qonh7lyBBYsbUXsR9LtO2)，用法見[在 Grok Bot 裡使用](#在-grok-bot-裡使用)
 
 **第 2 步：把問題交給 `/dbs`**
 
@@ -48,6 +50,33 @@ npx -y skills add dontbesilent2025/dbskill -g --all
 **第 3 步：在同一個對話中繼續**
 
 收到結果後，直接補充事實、材料或修改意見，不用重新輸入命令。換一個新目標時，再輸入一次 `/dbs`。
+
+## 在 Grok Bot 裡使用
+
+在 Grok Bot 裡不用打命令，直接加入現成的教練。第一次聊天時，它會自己裝好 dbskill
+
+| 教練 | 能幫你做什麼 | 加入連結 |
+| --- | --- | --- |
+| dbs 创业教练 | 想清楚生意卡在哪、這週先做哪一件事；願意的話，每週一主動找你復盤 | https://x.ai/bot/kpZtlm5CADHoXaaAqTV5Z |
+| dbs 内容教练 | 定選題，寫標題、封面和開頭，檢查稿子，復盤每條內容的表現；願意的話，每週五主動找你復盤 | https://x.ai/bot/qonh7lyBBYsbUXsR9LtO2 |
+
+**怎麼用**
+
+1. 打開上面的連結，點「Add to Grok Bot」，在 Grok Bot App 裡確認加入
+2. 給新加入的教練發一句「你好」。它會先花幾分鐘裝好 dbskill，再問你幾個關於生意或帳號的問題
+3. 之後直接說你的問題，例如「我的課續費率很低，先查哪裡」「幫我給這條影片想個標題」
+
+**教練說裝不上時**
+
+把下面這段原樣發給它。用內容教練的，把最後的 `startup` 換成 `content`：
+
+```text
+請在你的執行環境裡執行下面兩條命令安裝 dbskill，把輸出原樣告訴我：
+git clone --depth 1 https://github.com/dontbesilent2025/dbskill /tmp/dbskill 2>/dev/null || git -C /tmp/dbskill pull --ff-only
+python3 /tmp/dbskill/tools/grok/install.py --coach startup
+```
+
+不用教練、只想在自己的 Grok Bot 裡裝 dbskill，也發這段，把 `startup` 換成 `all`，會裝好全部 29 個公開 Skill
 
 ## /dbs 怎樣安排 Skill
 
@@ -170,20 +199,6 @@ claude plugin install dbs-diagnosis@dontbesilent-skills
 ```
 
 ![Claude Code 外掛安裝示範](demo.gif)
-
-### Grok Bot
-
-這一節的內容不在終端機執行，而是整段作為聊天內容發給你的 Grok Bot。
-
-用「dbs 创业教练」範本的，發：
-
-```text
-請在你的執行環境裡執行下面兩條命令安裝 dbskill，把輸出原樣告訴我：
-git clone --depth 1 https://github.com/dontbesilent2025/dbskill /tmp/dbskill 2>/dev/null || git -C /tmp/dbskill pull --ff-only
-python3 /tmp/dbskill/tools/grok/install.py --coach startup
-```
-
-用「dbs 内容教练」範本的，把最後的 `startup` 換成 `content`；想裝全部 29 個公開 Skill，換成 `all`。裝好後對 Bot 說「用 dbs 幫我看看……」即可。之後想更新，再發一次同樣的話
 
 ### 裝好後沒看到命令
 

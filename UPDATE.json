@@ -1,5 +1,5 @@
 {
-  "version": "3.2.0",
-  "notice": "Grok Bot 用户把一段话发给 bot，就能装好 29 个公开技能，配合「dbs 创业教练」「dbs 内容教练」模板直接用",
+  "version": "3.2.1",
+  "notice": "README 直接给出「dbs 创业教练」「dbs 内容教练」两个 Grok Bot 教练的添加链接和三步用法，打开链接添加就能用",
   "details_url": "https://github.com/dontbesilent2025/dbskill/commits/main"
 }
