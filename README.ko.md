@@ -2,7 +2,7 @@
 
 [简体中文](README.md) | [English](README.en.md) | [日本語](README.ja.md) | 한국어 | [繁體中文](README.zh-TW.md)
 
-[![Version](https://img.shields.io/badge/version-3.2.2-111111.svg)](VERSION)
+[![Version](https://img.shields.io/badge/version-3.2.3-111111.svg)](VERSION)
 [![skills.sh](https://skills.sh/b/dontbesilent2025/dbskill)](https://skills.sh/b/dontbesilent2025/dbskill)
 [![License](https://img.shields.io/badge/license-All%20Rights%20Reserved-111111.svg)](LICENSE)
 
@@ -283,4 +283,4 @@ Agent 대화에서 다음처럼 말하세요.
 - `books/` 디렉터리는 무료 열람만 가능합니다. [books/LICENSE](books/LICENSE)를 참고하세요.
 - 2026-11-02 이전에 공개된 버전은 당시의 CC BY-NC 4.0이 그대로 적용됩니다.
 
-허가 신청은 WeChat 공식 계정 「dontbesilent」에 메시지를 남기거나 openmarshall@gmail.com으로 보내 주세요.
+허가 신청은 openmarshall@gmail.com으로 이메일을 보내 주세요.

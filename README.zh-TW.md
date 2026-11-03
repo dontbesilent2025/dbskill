@@ -2,7 +2,7 @@
 
 [简体中文](README.md) | [English](README.en.md) | [日本語](README.ja.md) | [한국어](README.ko.md) | 繁體中文
 
-[![Version](https://img.shields.io/badge/version-3.2.2-111111.svg)](VERSION)
+[![Version](https://img.shields.io/badge/version-3.2.3-111111.svg)](VERSION)
 [![skills.sh](https://skills.sh/b/dontbesilent2025/dbskill)](https://skills.sh/b/dontbesilent2025/dbskill)
 [![License](https://img.shields.io/badge/license-All%20Rights%20Reserved-111111.svg)](LICENSE)
 
@@ -283,4 +283,4 @@ claude plugin install dbs-diagnosis@dontbesilent-skills
 - `books/` 目錄僅供免費閱讀，見 [books/LICENSE](books/LICENSE)。
 - 2026-11-02 之前發布的版本，仍依當時的 CC BY-NC 4.0 授權。
 
-申請授權請在微信公眾號「dontbesilent」後台留言，或寄信至 openmarshall@gmail.com。
+申請授權請寄信至 openmarshall@gmail.com。

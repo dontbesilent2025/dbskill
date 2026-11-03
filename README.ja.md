@@ -2,7 +2,7 @@
 
 [简体中文](README.md) | [English](README.en.md) | 日本語 | [한국어](README.ko.md) | [繁體中文](README.zh-TW.md)
 
-[![Version](https://img.shields.io/badge/version-3.2.2-111111.svg)](VERSION)
+[![Version](https://img.shields.io/badge/version-3.2.3-111111.svg)](VERSION)
 [![skills.sh](https://skills.sh/b/dontbesilent2025/dbskill)](https://skills.sh/b/dontbesilent2025/dbskill)
 [![License](https://img.shields.io/badge/license-All%20Rights%20Reserved-111111.svg)](LICENSE)
 
@@ -283,4 +283,4 @@ Agent との会話で次のように伝えます。
 - `books/` ディレクトリは無料での閲読のみ可能です。[books/LICENSE](books/LICENSE) を参照してください。
 - 2026-11-02 より前に公開された版は、当時の CC BY-NC 4.0 のままです。
 
-許可の申請は WeChat 公式アカウント「dontbesilent」へのメッセージ、または openmarshall@gmail.com まで。
+許可の申請は openmarshall@gmail.com までメールでお送りください。

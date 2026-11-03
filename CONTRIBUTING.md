@@ -14,4 +14,4 @@
 
 ## 联系方式
 
-在微信公众号「dontbesilent」后台留言，或发邮件至 openmarshall@gmail.com。
+发邮件至 openmarshall@gmail.com。

@@ -2,7 +2,7 @@
 
 [简体中文](README.md) | English | [日本語](README.ja.md) | [한국어](README.ko.md) | [繁體中文](README.zh-TW.md)
 
-[![Version](https://img.shields.io/badge/version-3.2.2-111111.svg)](VERSION)
+[![Version](https://img.shields.io/badge/version-3.2.3-111111.svg)](VERSION)
 [![skills.sh](https://skills.sh/b/dontbesilent2025/dbskill)](https://skills.sh/b/dontbesilent2025/dbskill)
 [![License](https://img.shields.io/badge/license-All%20Rights%20Reserved-111111.svg)](LICENSE)
 
@@ -283,4 +283,4 @@ Copyright © dontbesilent. All rights reserved. See [LICENSE](LICENSE) for the f
 - The `books/` directory is for free reading only. See [books/LICENSE](books/LICENSE).
 - Versions released before 2026-11-02 remain under CC BY-NC 4.0 as granted at the time.
 
-To request permission, leave a message on the WeChat Official Account "dontbesilent" or email openmarshall@gmail.com.
+To request permission, email openmarshall@gmail.com.
