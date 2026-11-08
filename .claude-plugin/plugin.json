@@ -1,7 +1,7 @@
 {
   "name": "dbs",
   "displayName": "dbskill",
-  "description": "dontbesilent 商业工具箱完整入口。包含 34 个当前业务 Skill、2 个 deprecated 旧入口和 1 个系统更新入口。",
+  "description": "dontbesilent 商业工具箱完整入口。包含 35 个当前业务 Skill、2 个 deprecated 旧入口和 1 个系统更新入口。",
   "skills": [
     "./skills/dbs",
     "./skills/dbs-update",
@@ -37,6 +37,7 @@
     "./skills/dbs-learning",
     "./skills/dbs-spread",
     "./skills/dbs-resonate",
-    "./skills/dbs-script-flow"
+    "./skills/dbs-script-flow",
+    "./skills/dbs-sync-to-dondon"
   ]
 }

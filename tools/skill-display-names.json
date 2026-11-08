@@ -35,6 +35,7 @@
     "dbs-spread": "分析传播原因",
     "dbs-resonate": "检查文稿共鸣",
     "dbs-script-flow": "检查口播稿流畅度",
-    "dbs-plain-writing": "平铺直叙写说明"
+    "dbs-plain-writing": "平铺直叙写说明",
+    "dbs-sync-to-dondon": "同步给 dondon"
   }
 }

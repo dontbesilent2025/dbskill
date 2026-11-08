@@ -1,5 +1,5 @@
 {
-  "version": "3.2.3",
-  "notice": "申请授权改为只通过邮件 openmarshall@gmail.com 联系，不再使用公众号后台留言",
+  "version": "3.3.0",
+  "notice": "新增「同步给 dondon」：把本机各 Agent 最近在做的事整理成近况，你确认后同步给自己的 dondon bot",
   "details_url": "https://github.com/dontbesilent2025/dbskill/commits/main"
 }

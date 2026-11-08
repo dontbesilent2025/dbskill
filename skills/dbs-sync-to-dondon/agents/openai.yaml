@@ -1,0 +1,4 @@
+interface:
+  display_name: "dbs-sync-to-dondon（同步给 dondon）"
+  short_description: "把本机各 Agent 最近的聊天整理成近况并找出用到的文档，确认后同步给 dondon bot"
+  default_prompt: "使用 $dbs-sync-to-dondon，把我最近在本机 Agent 里做的事整理成近况，连同用到的文档给我确认后同步给 dondon。"
