@@ -1,5 +1,5 @@
 {
-  "version": "3.3.0",
-  "notice": "新增「同步给 dondon」：把本机各 Agent 最近在做的事整理成近况，你确认后同步给自己的 dondon bot",
+  "version": "3.4.0",
+  "notice": "「同步给 dondon」的每天自动同步不再要求本机登录 Claude Code 或 Codex 命令行，近况改由 dondon 那边写",
   "details_url": "https://github.com/dontbesilent2025/dbskill/commits/main"
 }

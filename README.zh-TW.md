@@ -2,7 +2,7 @@
 
 [简体中文](README.md) | [English](README.en.md) | [日本語](README.ja.md) | [한국어](README.ko.md) | 繁體中文
 
-[![Version](https://img.shields.io/badge/version-3.3.0-111111.svg)](VERSION)
+[![Version](https://img.shields.io/badge/version-3.4.0-111111.svg)](VERSION)
 [![skills.sh](https://skills.sh/b/dontbesilent2025/dbskill)](https://skills.sh/b/dontbesilent2025/dbskill)
 [![License](https://img.shields.io/badge/license-All%20Rights%20Reserved-111111.svg)](LICENSE)
 
@@ -170,7 +170,6 @@ python3 /tmp/dbskill/tools/grok/install.py --coach startup
 | [`/dbs-human-dispatch`](skills/dbs-human-dispatch/SKILL.md) | 把任務派給員工或協作者，追蹤進度並驗收結果 |
 | [`/dbs-skill-maker`](skills/dbs-skill-maker/SKILL.md) | 製作新的 Skill，或改進已有的 Skill |
 | [`/dbs-install-skill`](skills/dbs-install-skill/SKILL.md) | 把 Skill 安裝到多個 Agent，並清理重複的入口 |
-| [`/dbs-sync-to-dondon`](skills/dbs-sync-to-dondon/SKILL.md) | 把本機各 Agent 最近在做的事整理成近況，確認後同步給你的 dondon bot；需要先在 bot 裡開通 |
 
 ## 安裝詳情
 

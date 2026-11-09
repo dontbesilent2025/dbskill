@@ -2,7 +2,7 @@
 
 [简体中文](README.md) | [English](README.en.md) | [日本語](README.ja.md) | 한국어 | [繁體中文](README.zh-TW.md)
 
-[![Version](https://img.shields.io/badge/version-3.3.0-111111.svg)](VERSION)
+[![Version](https://img.shields.io/badge/version-3.4.0-111111.svg)](VERSION)
 [![skills.sh](https://skills.sh/b/dontbesilent2025/dbskill)](https://skills.sh/b/dontbesilent2025/dbskill)
 [![License](https://img.shields.io/badge/license-All%20Rights%20Reserved-111111.svg)](LICENSE)
 
@@ -170,7 +170,6 @@ python3 /tmp/dbskill/tools/grok/install.py --coach startup
 | [`/dbs-human-dispatch`](skills/dbs-human-dispatch/SKILL.md) | 직원이나 협업자에게 업무를 맡기고, 진행 상황을 확인하고 결과를 검수합니다 |
 | [`/dbs-skill-maker`](skills/dbs-skill-maker/SKILL.md) | 새 Skill 을 만들거나 기존 Skill 을 개선합니다 |
 | [`/dbs-install-skill`](skills/dbs-install-skill/SKILL.md) | Skill 을 여러 Agent 에 설치하고 중복된 진입점을 정리합니다 |
-| [`/dbs-sync-to-dondon`](skills/dbs-sync-to-dondon/SKILL.md) | 로컬 Agent 들에서 최근 한 일을 근황으로 정리하고, 확인 후 dondon bot 에 동기화합니다 (bot 쪽에서 기능을 켜야 합니다) |
 
 ## 설치 세부 정보
 

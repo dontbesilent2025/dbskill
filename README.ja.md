@@ -2,7 +2,7 @@
 
 [简体中文](README.md) | [English](README.en.md) | 日本語 | [한국어](README.ko.md) | [繁體中文](README.zh-TW.md)
 
-[![Version](https://img.shields.io/badge/version-3.3.0-111111.svg)](VERSION)
+[![Version](https://img.shields.io/badge/version-3.4.0-111111.svg)](VERSION)
 [![skills.sh](https://skills.sh/b/dontbesilent2025/dbskill)](https://skills.sh/b/dontbesilent2025/dbskill)
 [![License](https://img.shields.io/badge/license-All%20Rights%20Reserved-111111.svg)](LICENSE)
 
@@ -170,7 +170,6 @@ python3 /tmp/dbskill/tools/grok/install.py --coach startup
 | [`/dbs-human-dispatch`](skills/dbs-human-dispatch/SKILL.md) | 社員や協力者に仕事を依頼し、進捗を追って成果を確認する |
 | [`/dbs-skill-maker`](skills/dbs-skill-maker/SKILL.md) | 新しい Skill を作る、または既存の Skill を改善する |
 | [`/dbs-install-skill`](skills/dbs-install-skill/SKILL.md) | Skill を複数の Agent にインストールし、重複した入口を整理する |
-| [`/dbs-sync-to-dondon`](skills/dbs-sync-to-dondon/SKILL.md) | ローカルの各 Agent で最近やっていることを近況にまとめ、確認後に dondon bot へ同期する（bot 側で有効化が必要） |
 
 ## インストールの詳細
 
