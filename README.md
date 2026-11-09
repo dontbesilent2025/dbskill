@@ -2,7 +2,7 @@
 
 简体中文 | [English](README.en.md) | [日本語](README.ja.md) | [한국어](README.ko.md) | [繁體中文](README.zh-TW.md)
 
-[![Version](https://img.shields.io/badge/version-3.4.0-2563EB.svg?style=flat-square)](VERSION)
+[![Version](https://img.shields.io/badge/version-3.5.0-2563EB.svg?style=flat-square)](VERSION)
 [![skills.sh](https://skills.sh/b/dontbesilent2025/dbskill)](https://skills.sh/b/dontbesilent2025/dbskill)
 [![License](https://img.shields.io/badge/license-All%20Rights%20Reserved-16A34A.svg?style=flat-square)](LICENSE)
 
@@ -10,7 +10,7 @@
 
 ## dbskill 是什么
 
-dbskill 是 dontbesilent 制作的中文 AI Skills 工具箱，共 35 个 Skill。安装到豆包、WorkBuddy、Claude Code、Codex 等支持 Skills 的 Agent 后，可以在对话里直接使用
+dbskill 是 dontbesilent 制作的中文 AI Skills 工具箱，共 36 个 Skill。安装到豆包、WorkBuddy、Claude Code、Codex 等支持 Skills 的 Agent 后，可以在对话里直接使用
 
 Skill 是一套写给 Agent 的做事方法。装好 dbskill 后，你可以让 Agent：
 
@@ -129,7 +129,18 @@ python3 /tmp/dbskill/tools/grok/install.py --coach startup
 | [`/dbs-ai-check`](skills/dbs-ai-check/SKILL.md) | 标出文案里的 AI 写作痕迹 |
 | [`/dbs-content-risk-check`](skills/dbs-content-risk-check/SKILL.md) | 发布前逐句检查平台审核风险，给出最小的修改方法 |
 | [`/dbs-plain-writing`](skills/dbs-plain-writing/SKILL.md) | 按事实顺序写产品、功能和更新说明，不加营销包装 |
+| [`/dbs-speak-human`](skills/dbs-speak-human/SKILL.md) | 把微信消息、顾客回复和 Agent 的回复改成本人随口会说的话 |
 | [`/dbs-wechat-html`](skills/dbs-wechat-html/SKILL.md) | 把 Markdown 排成能粘贴到公众号后台的 HTML |
+
+### AI 味三件套
+
+觉得文字「太 AI」时，先分清这段文字给谁看，再选 Skill：
+
+| 命令 | 处理什么文字 | 交给你什么 |
+| --- | --- | --- |
+| [`/dbs-ai-check`](skills/dbs-ai-check/SKILL.md) | 公众号长文、短视频文稿、推文 | 检测报告，逐处标出 AI 写作特征；你说「我想改」后逐条追问你本来想怎么说，不直接替你重写 |
+| [`/dbs-speak-human`](skills/dbs-speak-human/SKILL.md) | 微信消息、群聊开场、顾客回复、私信、Agent 回给你的话 | 改好的全文，附每处改动和原因 |
+| [`/dbs-plain-writing`](skills/dbs-plain-writing/SKILL.md) | 产品、功能、项目和更新说明 | 按事实顺序写成的成稿，不加营销包装 |
 
 ### 视频处理
 

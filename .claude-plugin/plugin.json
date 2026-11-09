@@ -23,6 +23,7 @@
     "./skills/dbs-chatroom",
     "./skills/dbs-ai-check",
     "./skills/dbs-plain-writing",
+    "./skills/dbs-speak-human",
     "./skills/dbs-wechat-html",
     "./skills/dbs-install-skill",
     "./skills/dbs-skill-maker",

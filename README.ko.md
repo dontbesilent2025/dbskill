@@ -2,7 +2,7 @@
 
 [简体中文](README.md) | [English](README.en.md) | [日本語](README.ja.md) | 한국어 | [繁體中文](README.zh-TW.md)
 
-[![Version](https://img.shields.io/badge/version-3.4.0-111111.svg)](VERSION)
+[![Version](https://img.shields.io/badge/version-3.5.0-111111.svg)](VERSION)
 [![skills.sh](https://skills.sh/b/dontbesilent2025/dbskill)](https://skills.sh/b/dontbesilent2025/dbskill)
 [![License](https://img.shields.io/badge/license-All%20Rights%20Reserved-111111.svg)](LICENSE)
 
@@ -10,7 +10,7 @@
 
 ## dbskill 이란
 
-dbskill 은 dontbesilent 가 만든 중국어 AI Skills 도구 상자이며, Skill 35 개로 구성됩니다. 豆包, WorkBuddy, Claude Code, Codex 등 Skills 를 지원하는 Agent 에 설치하면 대화에서 바로 사용할 수 있습니다.
+dbskill 은 dontbesilent 가 만든 중국어 AI Skills 도구 상자이며, Skill 36 개로 구성됩니다. 豆包, WorkBuddy, Claude Code, Codex 등 Skills 를 지원하는 Agent 에 설치하면 대화에서 바로 사용할 수 있습니다.
 
 Skill 은 Agent 에게 주는 작업 방법입니다. dbskill 을 설치하면 Agent 에게 다음을 맡길 수 있습니다.
 
@@ -129,7 +129,18 @@ python3 /tmp/dbskill/tools/grok/install.py --coach startup
 | [`/dbs-ai-check`](skills/dbs-ai-check/SKILL.md) | 글에 남은 AI 작성 흔적을 표시합니다 |
 | [`/dbs-content-risk-check`](skills/dbs-content-risk-check/SKILL.md) | 게시 전에 플랫폼 심사 위험을 문장 단위로 점검하고 최소한의 수정 방법을 제시합니다 |
 | [`/dbs-plain-writing`](skills/dbs-plain-writing/SKILL.md) | 사실 순서대로 상품, 기능, 업데이트 설명을 쓰며 마케팅 포장을 더하지 않습니다 |
+| [`/dbs-speak-human`](skills/dbs-speak-human/SKILL.md) | 위챗 메시지, 고객 답장, Agent 답변을 본인이 평소 말하듯 자연스럽게 고칩니다 |
 | [`/dbs-wechat-html`](skills/dbs-wechat-html/SKILL.md) | Markdown 을 위챗 공식 계정 관리 화면에 붙여 넣을 수 있는 HTML 로 편집합니다 |
+
+### AI 말투 3종 세트
+
+글이 「너무 AI 같다」고 느껴지면, 먼저 누가 읽을 글인지 구분한 뒤 Skill 을 고릅니다:
+
+| 명령 | 다루는 글 | 받는 결과 |
+| --- | --- | --- |
+| [`/dbs-ai-check`](skills/dbs-ai-check/SKILL.md) | 공식 계정 장문, 숏폼 영상 원고, 게시물 | AI 글쓰기 특징을 위치마다 표시한 보고서. 「고치고 싶다」고 하면 대신 다시 쓰지 않고 원래 하려던 말을 하나씩 묻습니다 |
+| [`/dbs-speak-human`](skills/dbs-speak-human/SKILL.md) | 위챗 메시지, 단톡방 첫 인사, 고객 답장, DM, Agent 답변 | 고친 전문과 바뀐 곳마다 이유 |
+| [`/dbs-plain-writing`](skills/dbs-plain-writing/SKILL.md) | 상품, 기능, 프로젝트, 업데이트 설명 | 사실 순서대로 쓴 완성본. 마케팅 포장은 더하지 않습니다 |
 
 ### 영상 처리
 

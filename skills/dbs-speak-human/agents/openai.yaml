@@ -1,0 +1,4 @@
+interface:
+  display_name: "dbs-speak-human（说人话）"
+  short_description: "把微信消息、顾客回复和 Agent 回复改成本人随口会说的话，去掉书面腔与 AI 味"
+  default_prompt: "使用 $dbs-speak-human，把这段话改成说话人本人在这个场合会自然说出的样子，保留原意和事实。"

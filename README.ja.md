@@ -2,7 +2,7 @@
 
 [简体中文](README.md) | [English](README.en.md) | 日本語 | [한국어](README.ko.md) | [繁體中文](README.zh-TW.md)
 
-[![Version](https://img.shields.io/badge/version-3.4.0-111111.svg)](VERSION)
+[![Version](https://img.shields.io/badge/version-3.5.0-111111.svg)](VERSION)
 [![skills.sh](https://skills.sh/b/dontbesilent2025/dbskill)](https://skills.sh/b/dontbesilent2025/dbskill)
 [![License](https://img.shields.io/badge/license-All%20Rights%20Reserved-111111.svg)](LICENSE)
 
@@ -10,7 +10,7 @@
 
 ## dbskill とは
 
-dbskill は dontbesilent が作成した中国語の AI Skills ツールキットで、35 個の Skill を含みます。豆包、WorkBuddy、Claude Code、Codex など Skills に対応する Agent にインストールすると、会話の中でそのまま使えます。
+dbskill は dontbesilent が作成した中国語の AI Skills ツールキットで、36 個の Skill を含みます。豆包、WorkBuddy、Claude Code、Codex など Skills に対応する Agent にインストールすると、会話の中でそのまま使えます。
 
 Skill は、Agent に渡す作業の進め方です。dbskill をインストールすると、Agent に次のことを任せられます。
 
@@ -129,7 +129,18 @@ python3 /tmp/dbskill/tools/grok/install.py --coach startup
 | [`/dbs-ai-check`](skills/dbs-ai-check/SKILL.md) | 文章の中の AI らしい書き方に印を付ける |
 | [`/dbs-content-risk-check`](skills/dbs-content-risk-check/SKILL.md) | 公開前にプラットフォーム審査のリスクを一文ずつ確認し、最小限の修正方法を示す |
 | [`/dbs-plain-writing`](skills/dbs-plain-writing/SKILL.md) | 商品、機能、更新内容の説明を事実の順に書き、宣伝的な装飾を加えない |
+| [`/dbs-speak-human`](skills/dbs-speak-human/SKILL.md) | WeChat のメッセージ、顧客への返信、Agent の返答を、本人が普段口にする言い方に直す |
 | [`/dbs-wechat-html`](skills/dbs-wechat-html/SKILL.md) | Markdown を、WeChat 公式アカウントの管理画面に貼り付けられる HTML にする |
+
+### AI っぽさ対策の 3 点セット
+
+文章が「AI っぽい」と感じたら、まず誰が読む文章かを見分けてから Skill を選びます：
+
+| コマンド | 対象の文章 | 受け取るもの |
+| --- | --- | --- |
+| [`/dbs-ai-check`](skills/dbs-ai-check/SKILL.md) | 公式アカウントの長文、ショート動画の原稿、投稿 | AI 文章の特徴を箇所ごとに示すレポート。「直したい」と言うと、書き直す代わりに本来どう言いたかったかを一つずつ質問する |
+| [`/dbs-speak-human`](skills/dbs-speak-human/SKILL.md) | WeChat のメッセージ、グループの書き出し、顧客への返信、DM、Agent の返答 | 直した全文と、各変更点とその理由 |
+| [`/dbs-plain-writing`](skills/dbs-plain-writing/SKILL.md) | 商品、機能、プロジェクト、更新内容の説明 | 事実の順に書いた完成稿。宣伝的な装飾は加えない |
 
 ### 動画処理
 

@@ -2,7 +2,7 @@
 
 [简体中文](README.md) | English | [日本語](README.ja.md) | [한국어](README.ko.md) | [繁體中文](README.zh-TW.md)
 
-[![Version](https://img.shields.io/badge/version-3.4.0-111111.svg)](VERSION)
+[![Version](https://img.shields.io/badge/version-3.5.0-111111.svg)](VERSION)
 [![skills.sh](https://skills.sh/b/dontbesilent2025/dbskill)](https://skills.sh/b/dontbesilent2025/dbskill)
 [![License](https://img.shields.io/badge/license-All%20Rights%20Reserved-111111.svg)](LICENSE)
 
@@ -10,7 +10,7 @@
 
 ## What dbskill is
 
-dbskill is a Chinese AI Skills toolkit made by dontbesilent, with 35 Skills. After you install it in Doubao, WorkBuddy, Claude Code, Codex, or another Agent that supports Skills, you can use it directly in the conversation.
+dbskill is a Chinese AI Skills toolkit made by dontbesilent, with 36 Skills. After you install it in Doubao, WorkBuddy, Claude Code, Codex, or another Agent that supports Skills, you can use it directly in the conversation.
 
 A Skill is a working method written for an Agent. With dbskill installed, you can ask your Agent to:
 
@@ -129,7 +129,18 @@ If you already know which Skill you need, you can enter its command directly. Fo
 | [`/dbs-ai-check`](skills/dbs-ai-check/SKILL.md) | Marks traces of AI writing in copy |
 | [`/dbs-content-risk-check`](skills/dbs-content-risk-check/SKILL.md) | Checks platform-review risks sentence by sentence before publishing and gives the smallest fix |
 | [`/dbs-plain-writing`](skills/dbs-plain-writing/SKILL.md) | Writes product, feature, and update descriptions in factual order, without marketing packaging |
+| [`/dbs-speak-human`](skills/dbs-speak-human/SKILL.md) | Rewrites WeChat messages, customer replies, and Agent replies so they sound like something you would actually say |
 | [`/dbs-wechat-html`](skills/dbs-wechat-html/SKILL.md) | Lays out Markdown as HTML you can paste into the WeChat Official Account editor |
+
+### The AI-tone trio
+
+When a text sounds "too AI", first decide who will read it, then pick the Skill:
+
+| Command | What text | What you get |
+| --- | --- | --- |
+| [`/dbs-ai-check`](skills/dbs-ai-check/SKILL.md) | Long-form WeChat articles, short-video scripts, posts | A report that marks each AI-writing trait; after you say "I want to revise", it asks what you meant at each spot instead of rewriting for you |
+| [`/dbs-speak-human`](skills/dbs-speak-human/SKILL.md) | WeChat messages, group-chat openers, customer replies, DMs, Agent replies | The rewritten text, with each change and the reason |
+| [`/dbs-plain-writing`](skills/dbs-plain-writing/SKILL.md) | Product, feature, project, and update descriptions | A finished text in factual order, without marketing packaging |
 
 ### Video processing
 
