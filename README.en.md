@@ -2,7 +2,7 @@
 
 [简体中文](README.md) | English | [日本語](README.ja.md) | [한국어](README.ko.md) | [繁體中文](README.zh-TW.md)
 
-[![Version](https://img.shields.io/badge/version-3.5.0-111111.svg)](VERSION)
+[![Version](https://img.shields.io/badge/version-3.5.1-111111.svg)](VERSION)
 [![skills.sh](https://skills.sh/b/dontbesilent2025/dbskill)](https://skills.sh/b/dontbesilent2025/dbskill)
 [![License](https://img.shields.io/badge/license-All%20Rights%20Reserved-111111.svg)](LICENSE)
 
@@ -129,7 +129,7 @@ If you already know which Skill you need, you can enter its command directly. Fo
 | [`/dbs-ai-check`](skills/dbs-ai-check/SKILL.md) | Marks traces of AI writing in copy |
 | [`/dbs-content-risk-check`](skills/dbs-content-risk-check/SKILL.md) | Checks platform-review risks sentence by sentence before publishing and gives the smallest fix |
 | [`/dbs-plain-writing`](skills/dbs-plain-writing/SKILL.md) | Writes product, feature, and update descriptions in factual order, without marketing packaging |
-| [`/dbs-speak-human`](skills/dbs-speak-human/SKILL.md) | Rewrites WeChat messages, customer replies, and Agent replies so they sound like something you would actually say |
+| [`/dbs-speak-human`](skills/dbs-speak-human/SKILL.md) | Rewrites WeChat messages, customer replies, and Agent replies into casual, natural speech; if you share your own messages, it follows your tone |
 | [`/dbs-wechat-html`](skills/dbs-wechat-html/SKILL.md) | Lays out Markdown as HTML you can paste into the WeChat Official Account editor |
 
 ### The AI-tone trio

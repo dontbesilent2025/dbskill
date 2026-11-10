@@ -2,7 +2,7 @@
 
 简体中文 | [English](README.en.md) | [日本語](README.ja.md) | [한국어](README.ko.md) | [繁體中文](README.zh-TW.md)
 
-[![Version](https://img.shields.io/badge/version-3.5.0-2563EB.svg?style=flat-square)](VERSION)
+[![Version](https://img.shields.io/badge/version-3.5.1-2563EB.svg?style=flat-square)](VERSION)
 [![skills.sh](https://skills.sh/b/dontbesilent2025/dbskill)](https://skills.sh/b/dontbesilent2025/dbskill)
 [![License](https://img.shields.io/badge/license-All%20Rights%20Reserved-16A34A.svg?style=flat-square)](LICENSE)
 
@@ -129,7 +129,7 @@ python3 /tmp/dbskill/tools/grok/install.py --coach startup
 | [`/dbs-ai-check`](skills/dbs-ai-check/SKILL.md) | 标出文案里的 AI 写作痕迹 |
 | [`/dbs-content-risk-check`](skills/dbs-content-risk-check/SKILL.md) | 发布前逐句检查平台审核风险，给出最小的修改方法 |
 | [`/dbs-plain-writing`](skills/dbs-plain-writing/SKILL.md) | 按事实顺序写产品、功能和更新说明，不加营销包装 |
-| [`/dbs-speak-human`](skills/dbs-speak-human/SKILL.md) | 把微信消息、顾客回复和 Agent 的回复改成本人随口会说的话 |
+| [`/dbs-speak-human`](skills/dbs-speak-human/SKILL.md) | 把微信消息、顾客回复和 Agent 的回复改成像真人随口说的口语 |
 | [`/dbs-wechat-html`](skills/dbs-wechat-html/SKILL.md) | 把 Markdown 排成能粘贴到公众号后台的 HTML |
 
 ### AI 味三件套

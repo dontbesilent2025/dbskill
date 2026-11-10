@@ -2,7 +2,7 @@
 
 [简体中文](README.md) | [English](README.en.md) | 日本語 | [한국어](README.ko.md) | [繁體中文](README.zh-TW.md)
 
-[![Version](https://img.shields.io/badge/version-3.5.0-111111.svg)](VERSION)
+[![Version](https://img.shields.io/badge/version-3.5.1-111111.svg)](VERSION)
 [![skills.sh](https://skills.sh/b/dontbesilent2025/dbskill)](https://skills.sh/b/dontbesilent2025/dbskill)
 [![License](https://img.shields.io/badge/license-All%20Rights%20Reserved-111111.svg)](LICENSE)
 
@@ -129,7 +129,7 @@ python3 /tmp/dbskill/tools/grok/install.py --coach startup
 | [`/dbs-ai-check`](skills/dbs-ai-check/SKILL.md) | 文章の中の AI らしい書き方に印を付ける |
 | [`/dbs-content-risk-check`](skills/dbs-content-risk-check/SKILL.md) | 公開前にプラットフォーム審査のリスクを一文ずつ確認し、最小限の修正方法を示す |
 | [`/dbs-plain-writing`](skills/dbs-plain-writing/SKILL.md) | 商品、機能、更新内容の説明を事実の順に書き、宣伝的な装飾を加えない |
-| [`/dbs-speak-human`](skills/dbs-speak-human/SKILL.md) | WeChat のメッセージ、顧客への返信、Agent の返答を、本人が普段口にする言い方に直す |
+| [`/dbs-speak-human`](skills/dbs-speak-human/SKILL.md) | WeChat のメッセージ、顧客への返信、Agent の返答を、人が普段口にする自然な話し言葉に直す。自分の書いた文を渡すと、その口調に合わせる |
 | [`/dbs-wechat-html`](skills/dbs-wechat-html/SKILL.md) | Markdown を、WeChat 公式アカウントの管理画面に貼り付けられる HTML にする |
 
 ### AI っぽさ対策の 3 点セット

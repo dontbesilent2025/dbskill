@@ -1,5 +1,5 @@
 {
-  "version": "3.5.0",
-  "notice": "新增「说人话」：把微信消息、回复和 Agent 的话改成本人随口会说的样子，并和检查 AI 味、平铺直叙写说明按文字类型分工",
+  "version": "3.5.1",
+  "notice": "「说人话」的说明改为如实描述：默认改成像真人随口说的口语，你提供自己写过的话时才参照你的口吻",
   "details_url": "https://github.com/dontbesilent2025/dbskill/commits/main"
 }
