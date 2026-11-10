@@ -42,10 +42,11 @@
 - 每个内容单元必须是一个独立的 Markdown 文件
 - 每个文件开头必须使用 YAML frontmatter
 - 文件名统一为 `ID_标题.md`
+- 来源 ID 使用 `SRC-*` 格式；内容单元 ID 使用类型前缀，如 `QST`、`CON`、`OPI`、`CAS`、`SOL`
 - 当前文件始终代表当前有效版本，历史变化交给 Git
 - `frontmatter` 内的 `id`、`relationships.target` 一律保留结构化 ID，不写 `Obsidian` 链接
 - 正文里凡是引用其他内容单元、主题地图、选题装配，统一写为 `[[文件名]]`，不要只写文件编号
-- 批量新增或迁移正文引用后，运行 `node 07-脚本与工具/补全Obsidian链接.js`
+- 批量新增或迁移正文引用后，运行 `node 07-脚本与工具/fill-obsidian-links.js`
 - `内容单元` 的正文 `## 关联单元` 必须覆盖 `frontmatter.relationships.target` 对应的文件链接；允许额外补充手工关联，但不能漏掉已声明关系
 
 ## 处理流程

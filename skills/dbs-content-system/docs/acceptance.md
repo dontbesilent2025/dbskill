@@ -7,7 +7,7 @@
 首次交付的最低标准是：
 
 - 工程骨架已建立
-- 根级 `AGENTS.md / CLAUDE.md / README.md / SOURCE_OF_TRUTH.md` 已存在
+- 根级 `AGENTS.md / README.md / SOURCE_OF_TRUTH.md` 已存在
 - 规则文件、模板文件、脚本文件已写入
 - 原始素材已复制到 `01-原始素材区/完整副本/`
 - 来源候选、原始索引、待处理清单已生成

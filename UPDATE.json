@@ -1,5 +1,5 @@
 {
-  "version": "3.5.1",
-  "notice": "「说人话」的说明改为如实描述：默认改成像真人随口说的口语，你提供自己写过的话时才参照你的口吻",
+  "version": "3.6.0",
+  "notice": "「知识库搭建与维护」和「内容复用系统」新建工程时只生成 AGENTS.md，不再另建 CLAUDE.md，Claude Code 直接读取 AGENTS.md",
   "details_url": "https://github.com/dontbesilent2025/dbskill/commits/main"
 }

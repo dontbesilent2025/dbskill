@@ -193,7 +193,6 @@ metadata:
 ```text
 {工程根}/
 ├── AGENTS.md
-├── CLAUDE.md
 ├── SOURCE_OF_TRUTH.md
 ├── README.md
 ├── 00-规则与索引/
@@ -208,8 +207,7 @@ metadata:
 
 根级固定文件职责：
 
-- `AGENTS.md`：跨宿主规则、目录职责、处理纪律
-- `CLAUDE.md`：Claude Code 侧说明
+- `AGENTS.md`：跨宿主规则、目录职责、处理纪律（Claude Code 也直接读取，不另建 `CLAUDE.md`）
 - `SOURCE_OF_TRUTH.md`：权威定位与冲突规则
 - `README.md`：对外说明当前系统做到了什么
 
@@ -218,7 +216,7 @@ metadata:
 本 skill 自带以下可分发文件，安装后即应可用：
 
 - `templates/`：7 份模板
-- `scaffold/root/`：根级 `AGENTS.md`、`CLAUDE.md`、`README.md`、`SOURCE_OF_TRUTH.md`
+- `scaffold/root/`：根级 `AGENTS.md`、`README.md`、`SOURCE_OF_TRUTH.md`
 - `scaffold/rules/`：6 份规则文件
 - `docs/quickstart.md`：最短启动链路
 - `docs/acceptance.md`：正式版验收标准
@@ -347,11 +345,10 @@ metadata:
 1. 新建工程目录
 2. 运行 `tools/init-content-system.js`
 3. 写入 `AGENTS.md`
-4. 写入 `CLAUDE.md`
-5. 写入 `SOURCE_OF_TRUTH.md`
-6. 写入 `README.md`
-7. 建立 `00-07` 目录
-8. 建立模板、规则、状态文件
+4. 写入 `SOURCE_OF_TRUTH.md`
+5. 写入 `README.md`
+6. 建立 `00-07` 目录
+7. 建立模板、规则、状态文件
 
 ### Phase 3：复制原始素材
 

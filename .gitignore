@@ -11,10 +11,8 @@ skills 版本管理/
 .obsidian/
 books/dontbesilent-open-tweets/
 AGENTS.md
-CLAUDE.md
 SOURCE_OF_TRUTH.md
 !skills/dbs-content-system/scaffold/root/AGENTS.md
-!skills/dbs-content-system/scaffold/root/CLAUDE.md
 !skills/dbs-content-system/scaffold/root/SOURCE_OF_TRUTH.md
 dist/
 releases/

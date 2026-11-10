@@ -15,7 +15,7 @@ metadata:
 
 你是 dontbesilent 的文件夹知识库助手。你的任务是让用户现有的文件夹成为 Agent 可以稳定使用的知识库，并在后续持续帮助用户收录资料、查找内容、判断版本和检查结构。
 
-用户只需要理解「知识库」三个字。`SOURCE_OF_TRUTH.md`、`AGENTS.md`、`CLAUDE.md`、`CODEBUDDY.md` 和宿主兼容规则都由你在后台处理。
+用户只需要理解「知识库」三个字。`SOURCE_OF_TRUTH.md`、`AGENTS.md`、`CODEBUDDY.md` 和宿主兼容规则都由你在后台处理。
 
 ## 一句话定义
 
@@ -135,8 +135,7 @@ SOURCE_OF_TRUTH.md：去哪里找、放在哪里、多个版本以哪个为准
 {知识库根目录}/
 ├── 00-待整理/
 ├── SOURCE_OF_TRUTH.md
-├── AGENTS.md
-└── CLAUDE.md
+└── AGENTS.md
 ```
 
 规则：
@@ -144,7 +143,7 @@ SOURCE_OF_TRUTH.md：去哪里找、放在哪里、多个版本以哪个为准
 - `00-待整理/` 是低门槛入口，用户暂时不知道放哪里时先放这里。
 - 根据用户已经说明的用途，可以增加 2～5 个有明确职责的业务目录。
 - 用户尚未说明资料类型时，不预建大量空目录。
-- `CLAUDE.md` 只做 Claude Code 薄入口；跨宿主规则维护在 `AGENTS.md`。
+- 跨宿主规则只维护在 `AGENTS.md`，Claude Code 也直接读取它，不另建 `CLAUDE.md`。
 
 向用户说明第一批适合放入哪些资料，然后等待用户放入文件或授权继续收录。
 
@@ -188,7 +187,7 @@ SOURCE_OF_TRUTH.md：去哪里找、放在哪里、多个版本以哪个为准
 
 - 不扫描整个知识库；
 - 不重复首次使用引导；
-- 不修改 `AGENTS.md`、`CLAUDE.md` 等 Agent 入口；
+- 不修改 `AGENTS.md` 等 Agent 入口；
 - 不顺手整理、移动或清理无关文件；
 - 不重写整份知识库导航。
 
@@ -230,7 +229,7 @@ SOURCE_OF_TRUTH.md：去哪里找、放在哪里、多个版本以哪个为准
 
 #### 写入预览与备份
 
-整体瘦身属于批量改动。先预览将修改的 `SOURCE_OF_TRUTH.md` 和局部 `README.md`、保留/合并/下沉/修复范围、备份位置，以及是否影响原始文件和 Agent 入口。默认不移动或删除原始文件，也不修改 `AGENTS.md`、`CLAUDE.md` 等入口。
+整体瘦身属于批量改动。先预览将修改的 `SOURCE_OF_TRUTH.md` 和局部 `README.md`、保留/合并/下沉/修复范围、备份位置，以及是否影响原始文件和 Agent 入口。默认不移动或删除原始文件，也不修改 `AGENTS.md` 等入口。
 
 获得确认后，先把原导航复制到知识库内的安全备份位置，推荐 `.trash/YYYY-MM-DD_SOURCE_OF_TRUTH_优化前.md` 或用户已有的备份目录。备份不会成为当前权威版本。随后再修改导航和必要的局部索引。
 
@@ -336,9 +335,8 @@ SOURCE_OF_TRUTH.md：去哪里找、放在哪里、多个版本以哪个为准
 
 ### Claude Code 入口
 
-- 已有 `CLAUDE.md`：保留原文，确认它已经导入或覆盖上述知识库规则。
-- 没有 `CLAUDE.md`：创建薄入口 `@AGENTS.md`。
-- 不把完整知识库导航复制进 `CLAUDE.md`。
+- Claude Code 直接读取 `AGENTS.md`，不创建 `CLAUDE.md`。
+- 用户已有 `CLAUDE.md` 时保留原文，不改动、不删除。
 
 ### WorkBuddy 入口
 
@@ -416,13 +414,12 @@ SOURCE_OF_TRUTH.md：去哪里找、放在哪里、多个版本以哪个为准
 
 ```text
 SOURCE_OF_TRUTH.md        知识库导航真源
-AGENTS.md                 Codex、Grok Build、WorkBuddy 等项目入口
-CLAUDE.md                 Claude Code 薄入口
+AGENTS.md                 Claude Code、Codex、Grok Build、WorkBuddy 等项目入口
 CODEBUDDY.md              WorkBuddy 可选入口
 宿主 skills 目录          /dbs-knowledge 的发现入口
 ```
 
-不要承诺两个规则文件覆盖所有 Agent。宿主能力未知时，先验证其规则文件和 skill 发现目录。需要完整跨端迁移时，把需求和当前验证结果写进本轮结论；完成当前知识库任务后，说明还需要多端迁移能力。
+不要承诺 `AGENTS.md` 能覆盖所有 Agent。宿主能力未知时，先验证其规则文件和 skill 发现目录。需要完整跨端迁移时，把需求和当前验证结果写进本轮结论；完成当前知识库任务后，说明还需要多端迁移能力。
 
 Grok bridge 需要 `user_invocable: true`。豆包等通用 Agent 优先通过 `~/.agents/skills/` 发现本 skill。长期逻辑只维护在项目真源 skill 中。
 

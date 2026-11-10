@@ -75,7 +75,7 @@ for (const name of templateNames) {
 }
 
 const scaffoldRoot = path.join(skillRoot, "scaffold", "root");
-for (const name of ["AGENTS.md", "CLAUDE.md", "README.md", "SOURCE_OF_TRUTH.md"]) {
+for (const name of ["AGENTS.md", "README.md", "SOURCE_OF_TRUTH.md"]) {
   const src = path.join(scaffoldRoot, name);
   const dst = path.join(targetRoot, name);
   fs.copyFileSync(src, dst);
