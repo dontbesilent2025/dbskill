@@ -2,7 +2,7 @@
 
 [简体中文](README.md) | English | [日本語](README.ja.md) | [한국어](README.ko.md) | [繁體中文](README.zh-TW.md)
 
-[![Version](https://img.shields.io/badge/version-3.6.0-111111.svg)](VERSION)
+[![Version](https://img.shields.io/badge/version-3.7.0-111111.svg)](VERSION)
 [![skills.sh](https://skills.sh/b/dontbesilent2025/dbskill)](https://skills.sh/b/dontbesilent2025/dbskill)
 [![License](https://img.shields.io/badge/license-All%20Rights%20Reserved-111111.svg)](LICENSE)
 
@@ -10,7 +10,7 @@
 
 ## What dbskill is
 
-dbskill is a Chinese AI Skills toolkit made by dontbesilent, with 36 Skills. After you install it in Doubao, WorkBuddy, Claude Code, Codex, or another Agent that supports Skills, you can use it directly in the conversation.
+dbskill is a Chinese AI Skills toolkit made by dontbesilent, with 37 Skills. After you install it in Doubao, WorkBuddy, Claude Code, Codex, or another Agent that supports Skills, you can use it directly in the conversation.
 
 A Skill is a working method written for an Agent. With dbskill installed, you can ask your Agent to:
 
@@ -181,6 +181,7 @@ When a text sounds "too AI", first decide who will read it, then pick the Skill:
 | [`/dbs-human-dispatch`](skills/dbs-human-dispatch/SKILL.md) | Assigns tasks to employees or collaborators, follows up on progress, and checks the results |
 | [`/dbs-skill-maker`](skills/dbs-skill-maker/SKILL.md) | Makes a new Skill or improves an existing one |
 | [`/dbs-install-skill`](skills/dbs-install-skill/SKILL.md) | Installs Skills into multiple Agents and cleans up duplicate entries |
+| [`/dbs-computer-use`](skills/dbs-computer-use/SKILL.md) | Lets an Agent operate web pages and desktop apps on your computer, in the background where possible without taking over your mouse; explains and guides installation when a tool is missing, and stops for your confirmation before paying, deleting, or sending |
 
 ## Installation details
 

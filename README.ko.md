@@ -2,7 +2,7 @@
 
 [简体中文](README.md) | [English](README.en.md) | [日本語](README.ja.md) | 한국어 | [繁體中文](README.zh-TW.md)
 
-[![Version](https://img.shields.io/badge/version-3.6.0-111111.svg)](VERSION)
+[![Version](https://img.shields.io/badge/version-3.7.0-111111.svg)](VERSION)
 [![skills.sh](https://skills.sh/b/dontbesilent2025/dbskill)](https://skills.sh/b/dontbesilent2025/dbskill)
 [![License](https://img.shields.io/badge/license-All%20Rights%20Reserved-111111.svg)](LICENSE)
 
@@ -10,7 +10,7 @@
 
 ## dbskill 이란
 
-dbskill 은 dontbesilent 가 만든 중국어 AI Skills 도구 상자이며, Skill 36 개로 구성됩니다. 豆包, WorkBuddy, Claude Code, Codex 등 Skills 를 지원하는 Agent 에 설치하면 대화에서 바로 사용할 수 있습니다.
+dbskill 은 dontbesilent 가 만든 중국어 AI Skills 도구 상자이며, Skill 37 개로 구성됩니다. 豆包, WorkBuddy, Claude Code, Codex 등 Skills 를 지원하는 Agent 에 설치하면 대화에서 바로 사용할 수 있습니다.
 
 Skill 은 Agent 에게 주는 작업 방법입니다. dbskill 을 설치하면 Agent 에게 다음을 맡길 수 있습니다.
 
@@ -181,6 +181,7 @@ python3 /tmp/dbskill/tools/grok/install.py --coach startup
 | [`/dbs-human-dispatch`](skills/dbs-human-dispatch/SKILL.md) | 직원이나 협업자에게 업무를 맡기고, 진행 상황을 확인하고 결과를 검수합니다 |
 | [`/dbs-skill-maker`](skills/dbs-skill-maker/SKILL.md) | 새 Skill 을 만들거나 기존 Skill 을 개선합니다 |
 | [`/dbs-install-skill`](skills/dbs-install-skill/SKILL.md) | Skill 을 여러 Agent 에 설치하고 중복된 진입점을 정리합니다 |
+| [`/dbs-computer-use`](skills/dbs-computer-use/SKILL.md) | Agent 가 컴퓨터에서 웹페이지와 데스크톱 앱을 조작하게 합니다. 가능하면 백그라운드에서 진행해 마우스를 빼앗지 않고, 도구가 없으면 먼저 설명한 뒤 설치를 안내하며, 결제, 삭제, 전송 전에는 멈추고 확인을 받습니다 |
 
 ## 설치 세부 정보
 

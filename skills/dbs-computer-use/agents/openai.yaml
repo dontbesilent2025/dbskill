@@ -1,0 +1,4 @@
+interface:
+  display_name: "dbs-computer-use（自动操控电脑）"
+  short_description: "任何系统、任何 Agent 一个入口操控电脑：Cua 优先、agent-desktop 兜底，缺工具引导安装，后台操作不抢鼠标"
+  default_prompt: "使用 $dbs-computer-use 在电脑上帮我完成这件事。"

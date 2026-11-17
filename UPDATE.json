@@ -1,5 +1,5 @@
 {
-  "version": "3.6.0",
-  "notice": "「知识库搭建与维护」和「内容复用系统」新建工程时只生成 AGENTS.md，不再另建 CLAUDE.md，Claude Code 直接读取 AGENTS.md",
+  "version": "3.7.0",
+  "notice": "新增「自动操控电脑」：一个入口让 Agent 在后台操作网页和桌面 App，缺工具先说明再引导安装",
   "details_url": "https://github.com/dontbesilent2025/dbskill/commits/main"
 }
