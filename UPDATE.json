@@ -1,5 +1,5 @@
 {
-  "version": "3.7.0",
-  "notice": "新增「自动操控电脑」：一个入口让 Agent 在后台操作网页和桌面 App，缺工具先说明再引导安装",
+  "version": "3.8.0",
+  "notice": "安装 Skill 时可自动同步到 Antigravity 的全局目录，供各工作区调用。",
   "details_url": "https://github.com/dontbesilent2025/dbskill/commits/main"
 }

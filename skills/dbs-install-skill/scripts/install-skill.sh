@@ -229,6 +229,7 @@ NATIVE_TARGET_DIRS=(
   "$INSTALL_HOME/.kiro/skills"
   "$INSTALL_HOME/.qwen/skills"
   "$INSTALL_HOME/.cline/skills"
+  "$INSTALL_HOME/.gemini/config/skills"
 )
 
 # 前 8 项已能读取 ~/.agents/skills；其余是旧版脚本曾写入、现已停止维护的目录。

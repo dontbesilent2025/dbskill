@@ -1,6 +1,6 @@
 ---
 name: dbs-install-skill
-description: 将单个 Skill 或 Skill 集合安装到通用 Agents、Claude Code、Codex、WorkBuddy、Grok、Hermes Agent、Kiro、Qwen Code、Cline 等 Agent。用户要求跨 Agent 安装、同步、查看、去重或卸载 Skill 时使用。
+description: 将单个 Skill 或 Skill 集合安装到通用 Agents、Claude Code、Codex、WorkBuddy、Grok、Hermes Agent、Kiro、Qwen Code、Cline、Antigravity 等 Agent。用户要求跨 Agent 安装、同步、查看、去重或卸载 Skill 时使用。
 metadata:
   dbs-handoff: |
     - 一个 Skill 名称、路径或 Skill 集合目录，要安装或同步 → 在本机已有的各 Agent 里建立入口链接，本机有 Grok 时另建适配层，清理指向同一来源的重复链接，交出各入口和清理结果；目标位置已有真实目录或其他来源时停下等用户确认
@@ -47,7 +47,8 @@ metadata:
 - Hermes Agent：`~/.hermes/skills/<skill-name>`；
 - Kiro：`~/.kiro/skills/<skill-name>`；
 - Qwen Code：`~/.qwen/skills/<skill-name>`；
-- Cline：`~/.cline/skills/<skill-name>`。
+- Cline：`~/.cline/skills/<skill-name>`；
+- Antigravity App、IDE 和 CLI：`~/.gemini/config/skills/<skill-name>`（仅在 `~/.gemini/config` 已存在时）。
 
 Unix-like 系统使用符号链接；Windows 的 Bash／MSYS 环境使用目录 Junction，避免 `ln -s` 在部分配置下生成实体目录副本。
 

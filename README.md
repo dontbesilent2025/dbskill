@@ -2,11 +2,11 @@
 
 简体中文 | [English](README.en.md) | [日本語](README.ja.md) | [한국어](README.ko.md) | [繁體中文](README.zh-TW.md)
 
-[![Version](https://img.shields.io/badge/version-3.7.0-2563EB.svg?style=flat-square)](VERSION)
+[![Version](https://img.shields.io/badge/version-3.8.0-2563EB.svg?style=flat-square)](VERSION)
 [![skills.sh](https://skills.sh/b/dontbesilent2025/dbskill)](https://skills.sh/b/dontbesilent2025/dbskill)
 [![License](https://img.shields.io/badge/license-All%20Rights%20Reserved-16A34A.svg?style=flat-square)](LICENSE)
 
-**本次更新：** 仓库改为保留所有权利。Skill 仍可免费安装和使用，也能用于自己的生意和客户服务；未经许可不得转载、打包、出售或用于 AI 训练。完整条款见 [LICENSE](LICENSE)
+**本次更新：** 安装 Skill 时可自动同步到 Antigravity 的全局目录，供各工作区调用。
 
 ## dbskill 是什么
 
